@@ -57,6 +57,11 @@ blockquote {
   font-style:italic;
 }
 
+.new {
+    color: red;
+    font-weight: bold;
+}
+
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
