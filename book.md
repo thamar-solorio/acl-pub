@@ -97,20 +97,36 @@ tool, the order file is generated automatically and should be to spec.
 
 #### Copyright Page
 
-We have taken the liberty of pre-populating the `copyright.tex` under
-`ACLPUB`'s `Templates->Sections` with the correct ISBN and ACL
-address.  If you have workshop sponsors, you will still need to
-acknowledge your sponsors in that file.
+Use [this copyright.tex form](files/copyright.tex) (located under
+Templates → copyright.tex). You will have to fill out the ISBN; once
+we have it, we will place it in the Google spreadsheet.
 
 #### CDROM Tab
 
-We have also pre-populated many of the fields under the top `CDROM`
-tab of the `ACLPUB` console. Only the `chair list` needs to be
-filled. Please fill in the `chair list` yourselves and make
-adjustments as necessary to the other fields.
+Much of the information you need to fill out under the `CDROM` tab can
+be found
+[on this Google doc](https://docs.google.com/spreadsheets/d/1Pu8FiSNLzBYl67gBNrTrq_rZwBS-iGoGO7MgRceZ7fk/edit#gid=0). As
+an example, here are the values used for the main conference proceedings:
 
-The `Bibtex URL` field has now been populated automatically. For your
-reference, a complete list of books and their corresponding URLs
-[can be found here](bibtex.html).
+    Abbreviation    NAACL-HLT
+    Type	        Main Conference
+    Title	        The 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
+    URL	            http://naacl.org/naacl-hlt-2015/
+    Book Title	    Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
+    Month	        May--June
+    Year	        2015
+    Location	    Denver, Colorado
+    Publisher	    Association for Computational Linguistics
+    Chair 1	        Rada Mihalcea (University of Michigan)
+    Chair 2	        Joyce Chai (Michigan State University)
+    Chair 3	        Anoop Sarkar (Simon Fraser University)
+    Chair 4	        TOBEFILLED-Jill Burstein (Educational Testing Service)
+    Chair 5	        TOBEFILLED-Jill Burstein (Educational Testing Service)
+    Chair 6	        TOBEFILLED-Jill Burstein (Educational Testing Service)
+    Chair 7	        TOBEFILLED-Jill Burstein (Educational Testing Service)
+    Chair 8	        TOBEFILLED-Jill Burstein (Educational Testing Service)
+    Bibtex URL	    http://www.aclweb.org/anthology/N15-1%03d
 
+**Please obtain the correct value** for `Bibtex URL` from
+  [this Google doc](https://docs.google.com/spreadsheets/d/1Pu8FiSNLzBYl67gBNrTrq_rZwBS-iGoGO7MgRceZ7fk/edit#gid=0).
 
