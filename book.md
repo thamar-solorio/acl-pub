@@ -88,12 +88,19 @@ tool, the order file is generated automatically and should be to spec.
 
        + 12:00--13:30 Lunch
 
+   **This is very important for things like the digital handbook!**
+
 -  Time ranges should be fully specified, with two dashes in between
     (and no spaces). Don't put just the start time.
 
        17 9:00--9:30 # A really great paper
 
 -  Do not put time ranges in parentheses
+
+-  Please make sure your file passes [this verification script](files/verify_order.py). E.g.,
+
+       $ cat proceedings/order | python verify_order.py
+       Found 0 errors
 
 #### Copyright Page
 
