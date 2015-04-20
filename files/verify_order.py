@@ -68,7 +68,7 @@ for i, line in enumerate(sys.stdin, 1):
         elif year != '2015':
             star_error(i, year)
 
-    elif line.startswith('+'):
+    elif line.startswith('+') or line.startswith('!'):
         try:
             _, timerange, title = line.split(' ', 2)
             if not re.match(TIMERANGE_REGEXP, timerange):
