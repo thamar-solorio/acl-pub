@@ -73,6 +73,37 @@ edit manually in START's provided textbox or which is created by the
 
 1. Paste it back into the `order` window and save 
 
+#### Sample order file
+
+The following order file is from SSST-7 at NAACL 2013. You can use it
+as a template. Note that this file is **computer readable**, used to
+generate the LaTeX for both the proceedings and the handbook, so it's
+very important to get all the details right (see below for some common
+mistakes):
+
+    * Thursday, June 13, 2013
+    + 9:15--9:30 Opening Remarks
+
+    = Session 1
+    8 9:30--10:00 # A Semantic Evaluation of Machine Translation Lexical Choice
+    6 10:00--10:30 # Taste of Two Different Flavours: Which Manipuri Script works better for English-Manipuri Language pair SMT Systems?
+    + 10:30--11:00 Break
+
+    = Session 2
+    7 11:00--11:30 # Hierarchical Alignment Decomposition Labels for Hiero Grammar Rules
+    3  11:30--12:00 # A Performance Study of Cube Pruning for Large-Scale Hierarchical Machine Translation
+    4  12:00--12:30 # Combining Word Reordering Methods on different Linguistic Abstraction Levels for Statistical Machine Translation
+    + 12:30--2:00 Lunch
+
+    = Session 3
+    + 2:00--3:00 Panel discussion: Meaning Representations for Machine Translation, with Jan Hajic, Kevin Knight, Martha Palmer and Dekai Wu
+    9 3:30--4:00 # Combining Top-down and Bottom-up Search for Unsupervised Induction of Transduction Grammars
+    + 3:30--4:00 Break
+
+    = Session 4
+    2 4:00--4:30 # A Formal Characterization of Parsing Word Alignments by Synchronous Grammars with Empirical Evidence to the ITG Hypothesis.
+    5  4:30--5:00 # Synchronous Linear Context-Free Rewriting Systems for Machine Translation
+
 #### Important notes about the order file
 
 The order file is used both to format and order the papers in the
