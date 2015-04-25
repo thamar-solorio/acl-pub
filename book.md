@@ -60,10 +60,11 @@ areas of compliance you should look for:
 You will need to produce a schedule for your workshop/session while
 generating the proceedings.  **The schedule deadline is the same as
 the book deadline!** Please follow the instructions in the
-[ACLPUB HOWTO](aclpub-howto-2010.html). We will build the conference
-handbook from the `order` file, which you can either edit manually in
-START's provided textbox or which is created by the (more complicated)
-Excel-based `Schedule Maker` tool. 
+[ACLPUB HOWTO](aclpub-howto-2010.html), or take a look at this
+[sample order file from SSST-7](files/sample-order.txt). We will build
+the conference handbook from the `order` file, which you can either
+edit manually in START's provided textbox or which is created by the
+(more complicated) Excel-based `Schedule Maker` tool.
 
 1. Generate an initial order file from the `Order` tab (`Import from
    ScheduleMaker` works even if you have not yet used Schedule Maker)
