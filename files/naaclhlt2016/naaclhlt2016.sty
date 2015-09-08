@@ -38,7 +38,6 @@
 % 5) Change the style reference from aclsub to acl2000, and be sure
 %    this style file is in your TeX search path
 
-
 % This is the LaTeX style file for EACL-95.  It is identical to the
 % style file for ANLP '94 except that the margins are adjusted for A4
 % paper.  -- abney 13 Dec 94
@@ -74,9 +73,9 @@
 %       pfps@research.att.com
 
 % Papers are to be prepared using the ``acl'' bibliography style,
-% as follows:
+% e.g.:
 %       \documentclass[11pt]{article}
-%       \usepackage{acl2000}
+%       \usepackage{acl}
 %       \title{Title}
 %       \author{Author 1 \and Author 2 \\ Address line \\ Address line \And
 %               Author 3 \\ Address line \\ Address line}
@@ -92,7 +91,6 @@
 % These printing devices, commonly known as ``write-white'' laser
 % printers, tend to make characters too light.  To get around this
 % problem, a darker set of fonts must be created for these devices.
-
 
 %% Physical page layout - slightly modified from IJCAI by pj %%
 
@@ -276,7 +274,7 @@
 \fi
 
 
-%% ----- Submitted version markup: Ruler and confidentiality -- MM
+%% ----- Submitted version markup: Ruler and confidentiality.  Using ideas/code from cvpr.sty 2015. -- MM
 
 \font\naaclhv  = phvb at 8pt 
 
@@ -401,44 +399,6 @@
 
 \def\@up#1{\raise.2ex\hbox{#1}}
 
-%% Citations %%
-
-% most of cite format was from aclsub.sty by SMS
-% don't box citations, separate with ; and a space
-% Replaced for multiple citations (pj) 
-% don't box citations and also add space, semicolon between multiple citations
-\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
-  \def\@citea{}\@cite{\@for\@citeb:=#2\do
-     {\@citea\def\@citea{; }\@ifundefined
-       {b@\@citeb}{{\bf ?}\@warning
-        {Citation `\@citeb' on page \thepage \space undefined}}%
- {\csname b@\@citeb\endcsname}}}{#1}}
-
-% Allow short (name-less) citations, when used in
-% conjunction with a bibliography style that creates labels like
-%       \citename{<names>, }<year>
-% 
-\let\@internalcite\cite
-\def\cite{\def\citename##1{##1, }\@internalcite}
-\def\shortcite{\def\citename##1{}\@internalcite}
-\def\newcite{\def\citename##1{{\frenchspacing##1} (}\@internalciteb}
-
-% Macros for \newcite, which leaves name in running text, and is
-% otherwise like \shortcite.
-\def\@citexb[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
-  \def\@citea{}\@newcite{\@for\@citeb:=#2\do
-    {\@citea\def\@citea{;\penalty\@m\ }\@ifundefined
-       {b@\@citeb}{{\bf ?}\@warning
-       {Citation `\@citeb' on page \thepage \space undefined}}%
-{\csname b@\@citeb\endcsname}}}{#1}}
-\def\@internalciteb{\@ifnextchar [{\@tempswatrue\@citexb}{\@tempswafalse\@citexb[]}}
-
-\def\@newcite#1#2{{#1\if@tempswa, #2\fi)}}
-\def\@biblabel#1{\def\citename##1{##1}[#1]\hfill}
-
-% Use parentheses instead of square brackets in the text. --  SMS (originals in latex.tex)
-\def\@cite#1#2{({#1\if@tempswa , #2\fi})}
-
 % Don't put a label in the bibliography at all.  
 % Just use the unlabeled format instead.
 \def\thebibliography#1{\small\vskip\parskip%
@@ -479,6 +439,44 @@
 
 \def\@bibitem#1{\item\if@filesw \immediate\write\@auxout
        {\string\bibcite{#1}{\the\c@enumi}}\fi\ignorespaces}
+
+%% Citations %%
+
+% most of cite format was from aclsub.sty by SMS
+% don't box citations, separate with ; and a space
+% Replaced for multiple citations (pj) 
+% don't box citations and also add space, semicolon between multiple citations
+\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do
+     {\@citea\def\@citea{; }\@ifundefined
+       {b@\@citeb}{{\bf ?}\@warning
+        {Citation `\@citeb' on page \thepage \space undefined}}%
+ {\csname b@\@citeb\endcsname}}}{#1}}
+
+% Allow short (name-less) citations, when used in
+% conjunction with a bibliography style that creates labels like
+%       \citename{<names>, }<year>
+% 
+\let\@internalcite\cite
+\def\cite{\def\citename##1{##1, }\@internalcite}
+\def\shortcite{\def\citename##1{}\@internalcite}
+\def\newcite{\def\citename##1{{\frenchspacing##1} (}\@internalciteb}
+
+% Macros for \newcite, which leaves name in running text, and is
+% otherwise like \shortcite.
+\def\@citexb[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+  \def\@citea{}\@newcite{\@for\@citeb:=#2\do
+    {\@citea\def\@citea{;\penalty\@m\ }\@ifundefined
+       {b@\@citeb}{{\bf ?}\@warning
+       {Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{#1}}
+\def\@internalciteb{\@ifnextchar [{\@tempswatrue\@citexb}{\@tempswafalse\@citexb[]}}
+
+\def\@newcite#1#2{{#1\if@tempswa, #2\fi)}}
+\def\@biblabel#1{\def\citename##1{##1}[#1]\hfill}
+
+% Use parentheses instead of square brackets in the text. --  SMS (originals in latex.tex)
+\def\@cite#1#2{({#1\if@tempswa , #2\fi})}
 
 %% Sections %%
 
