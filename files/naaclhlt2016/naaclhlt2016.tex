@@ -3,13 +3,14 @@
 %
 
 \documentclass[11pt,letterpaper]{article}
-\usepackage{naaclhlt2016}
+\usepackage{testing}
 \usepackage{times}
 \usepackage{latexsym}
-% Adding line numbers for submitted versions -- M. Mitchell
-%\usepackage[switch]{lineno}
 %\setlength\titlebox{6.5cm}    % Expanding the titlebox
-%\naaclfinalcopy
+
+% \naaclfinalcopy % Uncomment this line for the final submission
+\def\naaclPaperID{***} %  Enter the naacl Paper ID here
+
 \title{Instructions for NAACL HLT 2016 Proceedings\Thanks{This
     document has been adapted from the instructions for earlier ACL
     and NAACL proceedings, including those for 
@@ -22,10 +23,27 @@
     EACL formats.  Those versions were written by several people,
     including John Chen, Henry S. Thompson and Donald Walker.
     Additional elements were taken from the formatting instructions of
-    the {\em International Joint Conference on Artificial Intelligence}.  
-    This second version clarifies the procedure for 
-    submitting for double-blind reviewing.}}
+    the {\em International Joint Conference on Artificial Intelligence}
+    and the {\em Conference on Computer Vision and Pattern Recognition}.}}
 
+% Author information can be set in various styles:
+% For several authors from the same institution:
+% \author{Author 1 \and ... \and Author n \\
+%         Address line \\ ... \\ Address line}
+% if the names do not fit well on one line use
+%         Author 1 \\ {\bf Author 2} \\ ... \\ {\bf Author n} \\
+% For authors from different institutions:
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \And  ... \And
+%         Author n \\ Address line \\ ... \\ Address line}
+% To start a seperate ``row'' of authors use \AND, as in
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \AND
+%         Author 2 \\ Address line \\ ... \\ Address line \And
+%         Author 3 \\ Address line \\ ... \\ Address line}
+% If the title and author information does not fit in the area allocated,
+% place \setlength\titlebox{<new height>} right after
+% at the top, where <new height> can be something larger than 2.25in
 \author{Author 1\\
 	    XYZ Company\\
 	    111 Anywhere Street\\
@@ -40,13 +58,11 @@
 
 \date{}
 
-
 \begin{document}
-%\naaclfinalcopy
+
 \maketitle
+
 \begin{abstract}
-
-
 This document contains the instructions for preparing a camera-ready
   manuscript for the proceedings of NAACL HLT 2016.  The document itself conforms
   to its own specifications, and is therefore an example of what
@@ -83,21 +99,28 @@ figures or tables.  Type single-spaced.  Do not number the pages.
 Start all pages directly under the top margin.  See the guidelines
 later regarding formatting the first page.
 
-%% If the paper is produced by a printer, make sure that the quality
-%% of the output is dark enough to photocopy well.  It may be necessary
-%% to have your laser printer adjusted for this purpose.  Papers that are too
-%% faint to reproduce well may not be included.
-
-%% {\bf Do not print page numbers on the manuscript.}  Write them lightly
-%% on the back of each page in the upper left corner along with the
-%% (first) author's name.
-
 The maximum length of a manuscript is eight (8) pages for the main
 conference, printed single-sided, plus two (2) pages for references
 (see Section~\ref{sec:length} for additional information on the
 maximum number of pages).  Do not number the pages.
 
 The review process is double-blind, so do not include any author information (names, addresses) when submitting a paper for review.  However, you should allocate space for the names and addresses so that they will fit in the final (accepted) version.  This is best done by either providing fake or blank names and addresses (as shown in this paper).
+
+\subsection{The ruler}
+The \LaTeX\ style defines a printed ruler which should be present in the
+version submitted for review.  The ruler is provided in order that
+reviewers may comment on particular lines in the paper without
+circumlocution.  If you are preparing a document using a non-\LaTeX\
+document preparation system, please arrange for an equivalent ruler to
+appear on the final output pages.  The presence or absence of the ruler
+should not change the appearance of any other content on the page.  The
+camera ready copy should not contain a ruler. (\LaTeX\ users may uncomment
+the \verb'\naaclfinalcopy' command in the document preamble.)  Reviewers:
+note that the ruler measurements do not align well with lines in the paper
+--- this turns out to be very difficult to do well when the paper contains
+many figures and equations, and, when done, looks ugly.  Just use fractional
+references (e.g.\ this line is $095.5$), although in most cases one would
+expect that the approximate location will be adequate.
 
 \subsection{Electronically-available resources}
 
@@ -109,7 +132,6 @@ These files are all available at
 template file ({\tt naaclhlt2016.dot}) is also available at the same URL. We
 strongly recommend the use of these style files, which have been
 appropriately tailored for the NAACL HLT 2016 proceedings.
-
 
 \subsection{Format of Electronic Manuscript}
 \label{sect:pdf}
@@ -154,7 +176,6 @@ Print-outs of the PDF file on US-Letter paper should be identical to the
 hardcopy version.  If you cannot meet the above requirements about the
 production of your electronic submission, please contact the
 publication chairs above  as soon as possible.
-
 
 \subsection{Layout}
 \label{ssec:layout}
@@ -301,7 +322,7 @@ footnotes & 9 pt & \\
 {\bf Captions}: Provide a caption for every illustration; number each one
 sequentially in the form:  ``Figure 1. Caption of the Figure.'' ``Table 1.
 Caption of the Table.''  Type the captions of the figures and 
-tables below the body, using 10 point text.  Table and Figure prefixes should be bold-faced.
+tables below the body, using 10 point text.  Table and Figure labels should be bold-faced.
 
 \subsection{Accessibility}
 \label{ssec:accessibility}
@@ -327,6 +348,7 @@ must be accommodated within these page limits, observing the
 formatting instructions given in the present document.  Papers that do
 not conform to the specified length and formatting requirements are
 subject to be rejected without review.
+
 
 \section{Double-blind review process}
 \label{sec:blind}
@@ -415,4 +437,3 @@ Dan Gusfield.
 \end{thebibliography}
 
 \end{document}
-
