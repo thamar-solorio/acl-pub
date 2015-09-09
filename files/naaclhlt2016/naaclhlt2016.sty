@@ -386,21 +386,7 @@
  
 %% Bibliography %%
 
-\def\thebibliography#1{\section*{References}
-  \global\def\@listi{\leftmargin\leftmargini
-               \labelwidth\leftmargini \advance\labelwidth-\labelsep
-               \topsep 1pt plus 2pt minus 1pt
-               \parsep 0.25ex plus 1pt \itemsep 0.25ex plus 1pt}
-  \list {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
-    \advance\leftmargin\labelsep\usecounter{enumi}}
-    \def\newblock{\hskip .11em plus .33em minus -.07em}
-    \sloppy
-    \sfcode`\.=1000\relax}
-
-\def\@up#1{\raise.2ex\hbox{#1}}
-
-% Don't put a label in the bibliography at all.  
-% Just use the unlabeled format instead.
+% Change how the bibliography entries are displayed/spaced.
 \def\thebibliography#1{\small\vskip\parskip%
 \vskip\baselineskip%
 \def\baselinestretch{1}%
@@ -417,22 +403,8 @@
  \sfcode`\.=1000\relax}
 \let\endthebibliography=\endlist
 
-% Allow for a bibliography of sources of attested examples
-\def\thesourcebibliography#1{\vskip\parskip%
-\vskip\baselineskip%
-\def\baselinestretch{1}%
-\ifx\@currsize\normalsize\@normalsize\else\@currsize\fi%
-\vskip-\parskip%
-\vskip-\baselineskip%
-\section*{Sources of Attested Examples\@mkboth
- {Sources of Attested Examples}{Sources of Attested Examples}}\list
- {}{\setlength{\labelwidth}{0pt}\setlength{\leftmargin}{\parindent}
- \setlength{\itemindent}{-\parindent}}
- \def\newblock{\hskip .11em plus .33em minus -.07em}
- \sloppy\clubpenalty4000\widowpenalty4000
- \sfcode`\.=1000\relax}
-\let\endthesourcebibliography=\endlist
-
+% Don't put a label in the bibliography at all.  
+% Just use the unlabeled format instead.
 \def\@lbibitem[#1]#2{\item[]\if@filesw 
       { \def\protect##1{\string ##1\space}\immediate
         \write\@auxout{\string\bibcite{#2}{#1}}\fi\ignorespaces}}
@@ -456,7 +428,6 @@
 % Allow short (name-less) citations, when used in
 % conjunction with a bibliography style that creates labels like
 %       \citename{<names>, }<year>
-% 
 \let\@internalcite\cite
 \def\cite{\def\citename##1{##1, }\@internalcite}
 \def\shortcite{\def\citename##1{}\@internalcite}
