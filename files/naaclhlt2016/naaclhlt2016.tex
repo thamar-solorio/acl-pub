@@ -63,29 +63,28 @@
 \maketitle
 
 \begin{abstract}
-This document contains the instructions for preparing a camera-ready
-  manuscript for the proceedings of NAACL HLT 2016.  The document itself conforms
+ This document contains the instructions for preparing NAACL HLT 2016 submissions and camera-ready
+  manuscripts.  The document itself conforms
   to its own specifications, and is therefore an example of what
   your manuscript should look like.  Papers are required to conform to
-  all the directions reported in this document.  Also included are instructions for
-  submission to the conference, which are similar to the camera-ready instructions
-  but remove author-identifying information.
+  all the directions reported in this document.  Submitted and camera-ready formatting is similar,
+  however, the submitted paper should have author-identifying information removed, a `ruler' on the left
+ and right margins, and a confidentiality header.  By uncommenting \verb|\naaclfinalcopy| at the top of this 
+ document, it will compile to produce an example of the camera-ready formatting.
 \end{abstract}
 
 \section{Introduction}
 
-The following instructions are directed to authors of papers accepted
+The following instructions are directed to authors of papers submitted to and accepted
 for publication in the NAACL HLT 2016 proceedings.  All authors are required
 to adhere to these specifications. Authors are required to provide 
 a Portable Document Format (PDF) version of
 their papers.  The proceedings will be printed on US-Letter paper.
-Authors from countries in which access to word-processing systems is
+Authors from countries where access to word-processing systems is
 limited should contact the publication chairs as soon as possible.
-
-\indent\paragraph{Note} Grayscale readability of all figures and
+ Grayscale readability of all figures and
 graphics will be enforced for all accepted papers
-(\S\ref{ssec:accessibility}).  Apart from this, the style files and
-camera-ready requirements are unchanged from last year.
+(\S\ref{ssec:accessibility}).  
 
 \section{General Instructions}
 
@@ -104,10 +103,11 @@ conference, printed single-sided, plus two (2) pages for references
 (see Section~\ref{sec:length} for additional information on the
 maximum number of pages).  Do not number the pages.
 
-The review process is double-blind, so do not include any author information (names, addresses) when submitting a paper for review.  However, you should allocate space for the names and addresses so that they will fit in the final (accepted) version.  This is best done by either providing fake or blank names and addresses (as shown in this paper).
+The review process is double-blind, so do not include any author information (names, addresses) when submitting a paper for review.  
+However, you should maintain space for names and addresses so that they will fit in the final (accepted) version.  The NAACL HLT 2016 style will create the space for you when \verb|\naaclfinalcopy| is not specified.
 
 \subsection{The ruler}
-The \LaTeX\ style defines a printed ruler which should be present in the
+The NAACL HLT 2016 style defines a printed ruler which should be present in the
 version submitted for review.  The ruler is provided in order that
 reviewers may comment on particular lines in the paper without
 circumlocution.  If you are preparing a document using a non-\LaTeX\
@@ -115,11 +115,11 @@ document preparation system, please arrange for an equivalent ruler to
 appear on the final output pages.  The presence or absence of the ruler
 should not change the appearance of any other content on the page.  The
 camera ready copy should not contain a ruler. (\LaTeX\ users may uncomment
-the \verb'\naaclfinalcopy' command in the document preamble.)  Reviewers:
+the \verb|\naaclfinalcopy| command in the document preamble.)  Reviewers:
 note that the ruler measurements do not align well with lines in the paper
 --- this turns out to be very difficult to do well when the paper contains
 many figures and equations, and, when done, looks ugly.  Just use fractional
-references (e.g.\ this line is $095.5$), although in most cases one would
+references (\eg the first line on this page is $096.5$), although in most cases one would
 expect that the approximate location will be adequate.
 
 \subsection{Electronically-available resources}
@@ -142,14 +142,14 @@ postscript files: on Unix systems, you can use {\tt ps2pdf} for this
 purpose; under Microsoft Windows, you can use Adobe's Distiller, or
 if you have cygwin installed, you can use {\tt dvipdf} or
 {\tt ps2pdf}.  Note 
-that some word processing programs generate PDF which may not include
+that some word processing programs generate PDF that may not include
 all the necessary fonts (esp. tree diagrams, symbols). When you print
 or create the PDF file, there is usually an option in your printer
 setup to include none, all or just non-standard fonts.  Please make
 sure that you select the option of including ALL the fonts.  {\em
   Before sending it, test your {\/\em PDF} by printing it from a
   computer different from the one where it was created}. Moreover,
-some word processor may generate very large postscript/PDF files,
+some word processors may generate very large postscript/PDF files,
 where each page is rendered as an image. Such images may reproduce
 poorly.  In this case, try alternative ways to obtain the postscript
 and/or PDF.  One way on some systems is to install a driver for a
