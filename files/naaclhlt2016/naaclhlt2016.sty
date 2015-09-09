@@ -216,7 +216,9 @@
 \newcommand\AtPageLowerLeft[1]{\AtPageUpperLeft{%
   \put(0,\LenToUnit{-\paperheight}){#1}}}
 \newcommand\AtPageCenter[1]{\AtPageUpperLeft{%
-  \put(\LenToUnit{.5\paperwidth},\LenToUnit{-.5\paperheight}){#1}}%
+  \put(\LenToUnit{.5\paperwidth},\LenToUnit{-.5\paperheight}){#1}}}
+\newcommand\AtPageLowerCenter[1]{\AtPageUpperLeft{%
+  \put(\LenToUnit{.5\paperwidth},\LenToUnit{-\paperheight}){#1}}%
 }
 \newcommand\AtTextUpperLeft[1]{%
   \begingroup
@@ -274,7 +276,7 @@
 \fi
 
 
-%% ----- Submitted version markup: Ruler and confidentiality.  Using ideas/code from cvpr.sty 2015. -- MM
+%% ----- Submitted version markup: Page numbers, ruler, and confidentiality.  Using ideas/code from cvpr.sty 2015. -- MM
 
 \font\naaclhv  = phvb at 8pt 
 
@@ -315,14 +317,15 @@
 \def\temp{\naaclPaperId}
 \def\confidential{NAACL 2016 Submission~\naaclPaperID.  Confidential review copy.  DO NOT DISTRIBUTE.}
 
-%% Vruler and Confidentiality %%
-
+%% Page numbering, Vruler and Confidentiality %%
 % \makevruler[<SCALE>][<INITIAL_COUNT>][<STEP>][<DIGITS>][<HEIGHT>]
 \def\naaclruler#1{\makevruler[13.73pt][#1][1][3][\textheight]\usebox{\naaclrulerbox}}
 \def\leftoffset{-23pt}
 \def\rightoffset{480pt}
+\ifnaaclfinal\else\pagenumbering{arabic}
 \AddToShipoutPicture{%
 \ifnaaclfinal\else
+\AtPageLowerCenter{\thepage}
 \naaclruleroffset=\textheight
 \advance\naaclruleroffset4pt
   \AtTextUpperLeft{%
@@ -544,11 +547,15 @@
 % (handles latex bug where all periods are treated as end-of-sentence markers) -- MM
 \DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
 \def\@onedot{\ifx\@let@token.\else.\null\fi~}
+\DeclareRobustCommand\dotcomma{\futurelet\@let@token\@dotcomma}
+\def\@dotcomma{\ifx\@let@token.,\else.,\null\fi~}
 
-\def\esp{\emph{esp}\onedot} \def\Esp{\emph{Esp}\onedot}
-\def\eg{\emph{e.g}\onedot} \def\Eg{\emph{E.g}\onedot}
-\def\ie{\emph{i.e}\onedot} \def\Ie{\emph{I.e}\onedot}
+
+\def\esp{esp\onedot} \def\Esp{Esp\onedot}
+\def\eg{\emph{e.g}\dotcomma} \def\Eg{\emph{E.g}\dotcomma}
+\def\ie{\emph{i.e}\dotcomma} \def\Ie{\emph{I.e}\dotcomma}
 \def\cf{\emph{c.f}\onedot} \def\Cf{\emph{C.f}\onedot}
 \def\etc{\emph{etc}\onedot} \def\vs{\emph{vs}\onedot}
 \def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
 \def\etal{\emph{et al}\onedot}
+
