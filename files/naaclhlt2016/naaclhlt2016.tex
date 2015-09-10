@@ -6,10 +6,14 @@
 \usepackage{naaclhlt2016}
 \usepackage{times}
 \usepackage{latexsym}
-%\setlength\titlebox{6.5cm}    % Expanding the titlebox
 
 %\naaclfinalcopy % Uncomment this line for the final submission
 \def\naaclPaperID{***} %  Enter the naacl Paper ID here
+
+% To expand the titlebox for more authors, uncomment
+% below and set accordingly.
+% \addtolength\titlebox{.5in}    
+
 
 \title{Instructions for NAACL HLT 2016 Proceedings\Thanks{This
     document has been adapted from the instructions for earlier ACL
@@ -94,7 +98,8 @@ authors' names and complete
 addresses (only in the final version, not in the version submitted for review), 
 which must be centered at the top of the first page (see
 the guidelines in Subsection~\ref{ssec:first}), and any full-width
-figures or tables.  Type single-spaced.  Do not number the pages.
+figures or tables.  Type single-spaced.  Do not number the pages 
+in the camera-ready version.
 Start all pages directly under the top margin.  See the guidelines
 later regarding formatting the first page.
 
@@ -105,7 +110,7 @@ maximum number of pages).  Do not number the pages in the camera-ready
 manuscript.
 
 The review process is double-blind, so do not include any author information (names, addresses) when submitting a paper for review.  
-However, you should maintain space for names and addresses so that they will fit in the final (accepted) version.  The NAACL HLT 2016 style will create the space for you when \verb|\naaclfinalcopy| is not specified.
+However, you should maintain space for names and addresses so that they will fit in the final (accepted) version.  The NAACL HLT 2016 style will create a titlebox space of 2.5in for you when \verb|\naaclfinalcopy| is not specified.  
 
 \subsection{The ruler}
 The NAACL HLT 2016 style defines a printed ruler which should be present in the
@@ -204,7 +209,7 @@ Note that the text will no longer be centered.
 \subsection{The First Page}
 \label{ssec:first}
 
-Center the title, author's name(s) and affiliation(s) across both
+Center the title, author name(s) and affiliation(s) across both
 columns (or, in the case of initial submission, space for the names). 
 Do not use footnotes for affiliations.  Do not include the
 paper ID number assigned during the submission process. 
@@ -217,7 +222,7 @@ a blank line intervening. Approximately, put the title at 1in from the
 top of the page, followed by a blank line, then the author's names(s),
 and the affiliation on the following line.  Do not use only initials
 for given names (middle initials are allowed). Do not format surnames
-in all capitals (e.g., ``Bangalore,'' not ``BANGALORE'').  The affiliation should
+in all capitals (\eg ``Mitchell,'' not ``MITCHELL'').  The affiliation should
 contain the author's complete address, and if possible an electronic
 mail address. Leave about 0.75in between the affiliation and the body
 of the first page.
@@ -244,13 +249,14 @@ It should be no longer than 200 words.  The abstract text should be in 10 point 
 \verb|\wrt| & \wrt\\
 \verb|\esp| & \esp\\\hline
 \end{tabular}
-\caption{Shorthand commands provided in the NAACL HLT style.}\label{tab:shorthand}
+\caption{Shorthand commands provided in the NAACL-HLT \LaTeX\ style.}\label{tab:shorthand}
 \end{table}
 
 {\bf Text}: Begin typing the main body of the text immediately after
 the abstract, observing the two-column format as shown in 
-the present document.  Do not include page numbers.  NAACL HLT 2016
-additionally provides some helpful text macros, shown in Table \ref{tab:shorthand}.
+the present document.  Do not include page numbers in the camera-ready manuscript.  
+The NAACL HLT 2016 \LaTeX\ style additionally provides some helpful text macros, shown in Table \ref{tab:shorthand}. 
+MS Word users may desire to user similar formatting.
 
 {\bf Indent} when starting a new paragraph. For reasons of uniformity,
 use Adobe's {\bf Times Roman} fonts, with 11 points for text and 
@@ -285,8 +291,8 @@ Provide as complete a citation as possible, using a consistent format,
 such as the one for {\em Computational Linguistics\/} or the one in the 
 {\em Publication Manual of the American 
 Psychological Association\/}~\cite{APA:83}.  Full names for
-authors rather than initials is preferred.  If preferred, you may use
-abbreviations for conferences\footnote{\scriptsize {\tt https://en.wikipedia.org/wiki/ \\ \-\hspace{.75cm} List\_of\_computer\_science\_conference\_acronyms}} and journals\footnote{\tt http://www.abbreviations.com/jas.php}.
+authors rather than initials is preferred.  You may use
+{\bf standard} abbreviations for conferences\footnote{\scriptsize {\tt https://en.wikipedia.org/wiki/ \\ \-\hspace{.75cm} List\_of\_computer\_science\_conference\_acronyms}} and journals\footnote{\tt http://www.abbreviations.com/jas.php}.
 
 
 The \LaTeX{} and Bib\TeX{} style files provided roughly fit the
@@ -340,8 +346,7 @@ footnotes & 9 pt & \\
 \end{table}
 
 {\bf Captions}: Provide a caption for every illustration; number each one
-sequentially in the form:  ``Figure 1. Caption of the Figure.'' ``Table 1.
-Caption of the Table.''  Type the captions of the figures and 
+sequentially in the form:  ``{\bf Figure 1:} Caption of the Figure.'' ``{\bf Table 1:} Caption of the Table.''  Type the captions of the figures and 
 tables below the body, using 10 point text.  Table and Figure labels should be bold-faced.
 
 \subsection{Accessibility}
@@ -375,7 +380,7 @@ subject to be rejected without review.
 
 As the reviewing will be blind, the paper must not include the
 authors' names and affiliations.  Furthermore, self-references that
-reveal the author's identity, e.g., ``We previously showed (Smith,
+reveal the author's identity, \eg ``We previously showed (Smith,
 1991) ...'' must be avoided. Instead, use citations such as ``Smith
 previously showed (Smith, 1991) ...'' Papers that do not conform to
 these requirements will be rejected without review. In addition,
