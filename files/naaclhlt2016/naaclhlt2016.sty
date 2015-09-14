@@ -24,20 +24,6 @@
 % and removing the white space before the title on the first page
 % -- John Chen, June 29, 2000
 
-% To convert from submissions prepared using the style file aclsub.sty
-% prepared for the ACL 2000 conference, proceed as follows:
-% 1) Remove submission-specific information:  \whichsession, \id,
-%    \wordcount, \otherconferences, \area, \keywords
-% 2) \summary should be removed.  The summary material should come
-%     after \maketitle and should be in the ``abstract'' environment
-% 3) Check all citations.  This style should handle citations correctly
-%    and also allows multiple citations separated by semicolons.
-% 4) Check figures and examples.  Because the final format is double-
-%    column, some adjustments may have to be made to fit text in the column
-%    or to choose full-width (\figure*} figures.
-% 5) Change the style reference from aclsub to acl2000, and be sure
-%    this style file is in your TeX search path
-
 % This is the LaTeX style file for EACL-95.  It is identical to the
 % style file for ANLP '94 except that the margins are adjusted for A4
 % paper.  -- abney 13 Dec 94
@@ -46,22 +32,6 @@
 % version of the style used for AAAI and IJCAI, using some changes
 % prepared by Fernando Pereira and others and some minor changes 
 % by Paul Jacobs.
-
-% Papers prepared using the aclsub.sty file and acl.bst bibtex style
-% should be easily converted to final format using this style.  
-% (1) Submission information (\wordcount, \subject, and \makeidpage)
-% should be removed.
-% (2) \summary should be removed.  The summary material should come
-% after \maketitle and should be in the ``abstract'' environment
-% (between \begin{abstract} and \end{abstract}).
-% (3) Check all citations.  This style should handle citations correctly
-% and also allows multiple citations separated by semicolons.
-% (4) Check figures and examples.  Because the final format is double-
-% column, some adjustments may have to be made to fit text in the column
-% or to choose full-width (\figure*} figures.
-
-% Place this in a file called aclap.sty in the TeX search path.  
-% (Placing it in the same directory as the paper should also work.)
 
 % Prepared by Peter F. Patel-Schneider, liberally using the ideas of
 % other style hackers, including Barbara Beeton.
@@ -75,17 +45,17 @@
 % Papers are to be prepared using the ``acl'' bibliography style,
 % e.g.:
 %       \documentclass[11pt]{article}
-%       \usepackage{acl}
+%       \usepackage{naacl}
 %       \title{Title}
 %       \author{Author 1 \and Author 2 \\ Address line \\ Address line \And
 %               Author 3 \\ Address line \\ Address line}
 %       \begin{document}
 %       ...
 %       \bibliography{bibliography-file}
-%       \bibliographystyle{acl}
+%       \bibliographystyle{naacl}
 %       \end{document}
 
-\typeout{Conference Style for NAACL-HLT 2016 -- released September 8, 2015}
+\typeout{Conference Style for NAACL-HLT 2016 -- released September 14, 2015}
 
 % NOTE:  Some laser printers have a serious problem printing TeX output.
 % These printing devices, commonly known as ``write-white'' laser
@@ -314,8 +284,8 @@
 \ifnum\cv@refno<\cv@tot\repeat}}\endgroup}%
 %\makeatother
 
-\def\temp{\naaclPaperId}
-\def\confidential{NAACL 2016 Submission~\naaclPaperID.  Confidential review copy.  DO NOT DISTRIBUTE.}
+\def\naaclpaperid{***}
+\def\confidential{NAACL 2016 Submission~\naaclpaperid.  Confidential review copy.  DO NOT DISTRIBUTE.}
 
 %% Page numbering, Vruler and Confidentiality %%
 % \makevruler[<SCALE>][<INITIAL_COUNT>][<STEP>][<DIGITS>][<HEIGHT>]
