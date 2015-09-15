@@ -14,16 +14,18 @@
 % below and set accordingly.
 % \addtolength\titlebox{.5in}    
 
+\newcommand\BibTeX{B{\sc ib}\TeX}
+
 
 \title{Instructions for NAACL HLT 2016 Proceedings\Thanks{This
     document has been adapted from the instructions for earlier ACL
     and NAACL proceedings, including those for 
-    NAACL-HLT-15 by Matt Post and Adam Lopez,
-    NAACL-HLT-12 by Nizar Habash and William Schuler,
-    NAACL-HLT-10 by Claudia Leacock and Richard Wicentowski,
-    NAACL-HLT-09 by Joakim Nivre and Noah Smith, 
-    for ACL-05 by Hwee Tou Ng and Kemal Oflazer,
-    for ACL-02 by Eugene Charniak and Dekang Lin, and earlier ACL and
+    NAACL HLT15 by Matt Post and Adam Lopez,
+    NAACL HLT12 by Nizar Habash and William Schuler,
+    NAACL HLT10 by Claudia Leacock and Richard Wicentowski,
+    NAACL HLT09 by Joakim Nivre and Noah Smith, 
+    for ACL05 by Hwee Tou Ng and Kemal Oflazer,
+    for ACL02 by Eugene Charniak and Dekang Lin, and earlier ACL and
     EACL formats.  Those versions were written by several people,
     including John Chen, Henry S. Thompson and Donald Walker.
     Additional elements were taken from the formatting instructions of
@@ -71,10 +73,13 @@
   manuscripts.  The document itself conforms
   to its own specifications, and is therefore an example of what
   your manuscript should look like.  Papers are required to conform to
-  all the directions reported in this document.  Submitted and camera-ready formatting is similar,
+  all the directions reported in this document.  
+By using the provided \LaTeX\ and \BibTeX\ styles ({\small\tt naaclhlt2016.sty}, {\small\tt naaclhlt2016.bst}), the required formatting for NAACL HLT 2016 will be enabled by default.
+
+Submitted and camera-ready formatting is similar,
   however, the submitted paper should have author-identifying information removed, a `ruler' on the left
- and right margins, page numbers, and a confidentiality header.  By uncommenting \verb|\naaclfinalcopy| at the top of this 
- document, it will compile to produce an example of the camera-ready formatting; by leaving it commented out, the document will be anonymized for initial submission.  When you first create your submission on softconf, please fill in your submitted paper ID in the \verb|\def\naaclpaperid{***}| definition at the top.
+ and right margins, page numbers, and a confidentiality header.  By uncommenting {\small\verb|\naaclfinalcopy|} at the top of this 
+ document, it will compile to produce an example of the camera-ready formatting; by leaving it commented out, the document will be anonymized for initial submission.  
 \end{abstract}
 
 \section{Introduction}
@@ -109,11 +114,11 @@ conference, printed single-sided, plus two (2) pages for references
 maximum number of pages).  Do not number the pages in the camera-ready
 manuscript.
 
-By uncommenting \verb|\naaclfinalcopy| at the top of this 
- document, it will compile to produce an example of the camera-ready formatting; by leaving it commented out, the document will be anonymized for initial submission.  When you first create your submission on softconf, please fill in your submitted paper ID where \verb|***| appears in the \verb|\def\naaclpaperid{***}| definition at the top.
+By uncommenting {\small\verb|\naaclfinalcopy|} at the top of this 
+ document, it will compile to produce an example of the camera-ready formatting; by leaving it commented out, the document will be anonymized for initial submission.  When you first create your submission on softconf, please fill in your submitted paper ID where {\small\verb|***|} appears in the {\small\verb|\def\naaclpaperid{***}|} definition at the top.
 
 The review process is double-blind, so do not include any author information (names, addresses) when submitting a paper for review.  
-However, you should maintain space for names and addresses so that they will fit in the final (accepted) version.  The NAACL HLT 2016 \LaTeX\ style will create a titlebox space of 2.5in for you when \verb|\naaclfinalcopy| is commented out.  
+However, you should maintain space for names and addresses so that they will fit in the final (accepted) version.  The NAACL HLT 2016 \LaTeX\ style will create a titlebox space of 2.5in for you when {\small\verb|\naaclfinalcopy|} is commented out.  
 
 \subsection{The ruler}
 The NAACL HLT 2016 style defines a printed ruler which should be present in the
@@ -124,7 +129,7 @@ document preparation system, please arrange for an equivalent ruler to
 appear on the final output pages.  The presence or absence of the ruler
 should not change the appearance of any other content on the page.  The
 camera ready copy should not contain a ruler. (\LaTeX\ users may uncomment
-the \verb|\naaclfinalcopy| command in the document preamble.)  Reviewers:
+the {\small\verb|\naaclfinalcopy|} command in the document preamble.)  Reviewers:
 note that the ruler measurements do not align well with lines in the paper
 --- this turns out to be very difficult to do well when the paper contains
 many figures and equations, and, when done, looks ugly.  Just use fractional
@@ -133,12 +138,13 @@ expect that the approximate location will be adequate.
 
 \subsection{Electronically-available resources}
 
-NAACL HLT provides this description in \LaTeX2e{} ({\tt naaclhlt2016.tex}) and PDF
-format ({\tt naaclhlt2016.pdf}), along with the \LaTeX2e{} style file used to
-format it ({\tt naaclhlt2016.sty}) and an ACL bibliography style ({\tt naaclhlt2016.bst}).
+NAACL HLT provides this description in \LaTeX2e{} ({\small\tt naaclhlt2016.tex}) and PDF
+format ({\small\tt naaclhlt2016.pdf}), along with the \LaTeX2e{} style file used to
+format it ({\small\tt naaclhlt2016.sty}) and an ACL bibliography style ({\small\tt naaclhlt2016.bst})
+and example bibliography ({\small\tt naaclhlt2016.bib}).
 These files are all available at
-{\tt naacl.org/naacl-hlt-2016}.  A Microsoft Word
-template file ({\tt naaclhlt2016.dot}) is also available at the same URL. We
+{\small\tt naacl.org/naacl-hlt-2016}.  A Microsoft Word
+template file ({\small\tt naaclhlt2016.dot}) is also available at the same URL. We
 strongly recommend the use of these style files, which have been
 appropriately tailored for the NAACL HLT 2016 proceedings.
 
@@ -147,10 +153,10 @@ appropriately tailored for the NAACL HLT 2016 proceedings.
 
 For the production of the electronic manuscript you must use Adobe's
 Portable Document Format (PDF). This format can be generated from
-postscript files: on Unix systems, you can use {\tt ps2pdf} for this
+postscript files: on Unix systems, you can use {\small\tt ps2pdf} for this
 purpose; under Microsoft Windows, you can use Adobe's Distiller, or
-if you have cygwin installed, you can use {\tt dvipdf} or
-{\tt ps2pdf}.  Note 
+if you have cygwin installed, you can use {\small\tt dvipdf} or
+{\small\tt ps2pdf}.  Note 
 that some word processing programs generate PDF that may not include
 all the necessary fonts (esp. tree diagrams, symbols). When you print
 or create the PDF file, there is usually an option in your printer
@@ -167,19 +173,17 @@ postscript printer, send your document to the printer specifying
 
 For reasons of uniformity, Adobe's {\bf Times Roman} font should be
 used. In \LaTeX2e{} this is accomplished by putting
-
-\begin{quote}
+\small
 \begin{verbatim}
 \usepackage{times}
 \usepackage{latexsym}
 \end{verbatim}
-\end{quote}
+\normalsize
 in the preamble.
 
 Additionally, it is of utmost importance to specify the {\bf
   US-Letter format} (8.5in $\times$ 11in) when formatting the paper.
-When working with {\tt dvips}, for instance, one should specify {\tt
-  -t letter}.
+When working with {\small\tt dvips}, for instance, one should specify {\small\tt -t letter}.
 
 Print-outs of the PDF file on US-Letter paper should be identical to the
 hardcopy version.  If you cannot meet the above requirements about the
@@ -243,7 +247,7 @@ It should be no longer than 200 words.  The abstract text should be in 10 point 
 \small
 \begin{tabular}{|l|l|}
 \hline
-{\bf Command}& {\bf Rendered text} \\\hline
+{\bf Command}& {\bf Output} \\\hline
 \verb|\eg| & \eg \\
 \verb|\ie| & \ie\\
 \verb|\cf| & \cf\\
@@ -252,7 +256,37 @@ It should be no longer than 200 words.  The abstract text should be in 10 point 
 \verb|\wrt| & \wrt\\
 \verb|\esp| & \esp\\\hline
 \end{tabular}
-\caption{Shorthand commands provided in the NAACL-HLT \LaTeX\ style.}\label{tab:shorthand}
+\caption{Shorthand commands provided in the NAACL HLT \LaTeX\ style.}\label{tab:shorthand}
+\end{table}
+
+\begin{table}
+\centering
+\small
+\begin{tabular}{cc}
+\begin{tabular}{|l|l|}
+\hline
+{\bf Command} & {\bf Output}\\\hline
+\verb|{\"a}| & {\"a} \\
+\verb|{\^e}| & {\^e} \\
+\verb|{\`i}| & {\`i} \\ 
+\verb|{\.I}| & {\.I} \\ 
+\verb|{\o}| & {\o} \\
+\verb|{\'u}| & {\'u}  \\ 
+\verb|{\aa}| & {\aa}  \\\hline
+\end{tabular} & 
+\begin{tabular}{|l|l|}
+\hline
+{\bf Command} & {\bf  Output}\\\hline
+\verb|{\c c}| & {\c c} \\ 
+\verb|{\u g}| & {\u g} \\ 
+\verb|{\l}| & {\l} \\ 
+\verb|{\~n}| & {\~n} \\ 
+\verb|{\H o}| & {\H o} \\ 
+\verb|{\v r}| & {\v r} \\ 
+\verb|{\ss}| & {\ss} \\\hline
+\end{tabular}
+\end{tabular}
+\caption{Example commands for accented characters, to be used in, \eg  \BibTeX names.}\label{tab:accents}
 \end{table}
 
 {\bf Text}: Begin typing the main body of the text immediately after
@@ -279,28 +313,37 @@ in Arabic numerals.
 
 {\bf Citations}: Citations within the text appear
 in parentheses as~\cite{Gusfield:97} or, if the author's name appears in
-the text itself, as Gusfield~\shortcite{Gusfield:97}. In \LaTeX2e, the former is accomplished using
-\verb|\cite| and the latter with \verb|\shortcite| or \verb|\newcite|.
+the text itself, as Gusfield~\shortcite{Gusfield:97}.  Using the provided \LaTeX\ style, the former is accomplished using
+{\small\verb|\cite|} and the latter with {\small\verb|\shortcite|} or {\small\verb|\newcite|}.  Collapse multiple citations as in~\cite{Gusfield:97,Aho:72}; this is accomplished with the provided style using commas within the {\small\verb|\cite|} command, \eg {\small\verb|\cite{Gusfield:97,Aho:72}|}.  
 Append lowercase letters to the year in cases of ambiguities.  
 Treat double authors as in~\cite{Aho:72}, but write as 
-in~\cite{Chandra:81} when more than two authors are involved. 
-Collapse multiple citations as in~\cite{Gusfield:97,Aho:72}.
+in~\cite{Chandra:81} when more than two authors are involved.  
 
-\textbf{References}: Gather the full set of references together under
-the heading {\bf References}; place the section before any Appendices,
-unless they contain references. Arrange the references alphabetically
-by first author, rather than by order of occurrence in the text.
-Provide as complete a citation as possible, using a consistent format,
+\textbf{References}:  We recommend
+including references in a separate~{\small\texttt .bib} file, and include an example file 
+in this release ({\small\tt naalhlt2016.bib}).  Some example commands
+for names with accents are provided in Table \ref{tab:accents}.  
+
+Provide as complete a reference as possible, with a consistent format,
 such as the one for {\em Computational Linguistics\/} or the one in the 
 {\em Publication Manual of the American 
-Psychological Association\/}~\cite{APA:83}.  Full names for
-authors rather than initials is preferred.  You may use
+Psychological Association\/}~\cite{APA:83}.  Authors' full names rather than initials are preferred.  You may use
 {\bf standard} abbreviations for conferences\footnote{\scriptsize {\tt https://en.wikipedia.org/wiki/ \\ \-\hspace{.75cm} List\_of\_computer\_science\_conference\_acronyms}} and journals\footnote{\tt http://www.abbreviations.com/jas.php}.
 
+References should appear at the 
+end of the document, but before any Appendices (unless the appendices contain references).
+References stored in the separate~{\small\tt .bib} file, for example, {\small\tt naalhlt2016.bib}, are inserted into the document using the following commands:
 
-The \LaTeX{} and Bib\TeX{} style files provided roughly fit the
-American Psychological Association format, allowing regular citations, 
-short citations and multiple citations as described above.
+\small
+\begin{verbatim}
+\bibliography{naaclhlt2016}
+\bibliographystyle{naaclhlt2016}
+\end{verbatim}
+\normalsize 
+
+References should appear under
+the heading {\bf References} and should be arranged alphabetically
+by first author, rather than by order of occurrence in the text.  %This behavior is provided by default in the provided \BibTeX\ style ({\small\tt naaclhlt2016.bst}).
 
 {\bf Appendices}: Appendices, if any, directly follow the text and the
 references (but see above).  Letter them in sequence and provide an
@@ -327,7 +370,8 @@ the top of a page. Color illustrations are discouraged, unless you have verified
 they will be understandable when printed in black ink. 
 
 \begin{table}
-\begin{center}
+\small
+\centering
 \begin{tabular}{|l|rl|}
 \hline \bf Type of Text & \bf Font Size & \bf Style \\ \hline
 paper title & 15 pt & bold \\
@@ -339,12 +383,10 @@ document text & 11 pt  &\\
 abstract text & 10 pt & \\
 captions & 10 pt & \\
 caption label & 10 pt & bold \\
-above caption skip & 3 pt & \\
 bibliography & 10 pt & \\
 footnotes & 9 pt & \\
 \hline
 \end{tabular}
-\end{center}
 \caption{\label{font-table} Font guide.}
 \end{table}
 
