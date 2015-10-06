@@ -539,3 +539,9 @@
 \def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
 \def\etal{\emph{et al}\onedot}
 
+% pdflatex ignores letterpaper option
+\ifx\pdfoutput\undefined % LaTeX is used, pdf sizes are undefined
+\else% pdfLaTeX is used, pds sizes are defined
+   \pdfpagewidth 8.5in
+   \pdfpageheight 11in
+\fi
