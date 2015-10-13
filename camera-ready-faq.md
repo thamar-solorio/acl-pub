@@ -25,7 +25,7 @@ title: NAACL 2015 instructions for camera-ready paper submissions
      [ACL anthology](http://www.aclweb.org/anthology/)** (and in
      Google Scholar, etc).
 
-     ![Picture of Softconf user info fields](images/userinfo.png)
+     ![Picture of Softconf user info fields](assets/images/userinfo.png)
 
 -  How should the final copy differ from the original submission?
 
@@ -84,12 +84,12 @@ title: NAACL 2015 instructions for camera-ready paper submissions
       - Using Apple's Preview.app. Open the PDF, and type &#8984-I. It should report the
         correct page size. 
         
-        ![](images/apple-preview.png).
+        ![](assets/images/apple-preview.png).
 
       - Using Adobe Acrobat. Open the PDF, navigate to File, Properties..., Description. The
         field labeled "Page Size" should read 8.50 x 11.00 in.
 
-        ![](images/acrobat.png)
+        ![](assets/images/acrobat.png)
 
    <a name="format-margins"></a>
    - **Adjusting margin offsets**. The text of your paper will almost
@@ -99,7 +99,7 @@ title: NAACL 2015 instructions for camera-ready paper submissions
      same position on each page. Here is an example of a page printed
      with the margin boundaries that demonstrates this shifting:
 
-    ![](images/margin-shifted.png)
+    ![](assets/images/margin-shifted.png)
 
      **<font color="red">START provides you with the means to fix this
      margin offset; please do!</font>**. To do so, after you upload
@@ -111,7 +111,7 @@ title: NAACL 2015 instructions for camera-ready paper submissions
      of the proceedings containing only your paper, annotated with
      guidelines that help you shift the content of your paper.
 
-     ![](images/margin-offsets.png)
+     ![](assets/images/margin-offsets.png)
 
      Please determine the required adjustments and enter them here. You can click "(click here to
      show/hide instructions)" for more information on how to do this.
