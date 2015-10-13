@@ -55,7 +55,7 @@
 %       \bibliographystyle{naacl}
 %       \end{document}
 
-\typeout{Conference Style for NAACL-HLT 2016 -- released September 14, 2015}
+\typeout{Conference Style for NAACL-HLT 2016 -- released October 13, 2015}
 
 % NOTE:  Some laser printers have a serious problem printing TeX output.
 % These printing devices, commonly known as ``write-white'' laser
@@ -63,7 +63,9 @@
 % problem, a darker set of fonts must be created for these devices.
 
 %% Physical page layout - slightly modified from IJCAI by pj %%
-
+%% US Letter version of pay layout
+\setlength\paperheight{11in}
+\setlength\paperwidth{8.5in}
 \setlength\topmargin{0.0in} 
 \setlength\oddsidemargin{-0.0in}
 \setlength\textheight{9.0in} 
@@ -188,8 +190,9 @@
 \newcommand\AtPageCenter[1]{\AtPageUpperLeft{%
   \put(\LenToUnit{.5\paperwidth},\LenToUnit{-.5\paperheight}){#1}}}
 \newcommand\AtPageLowerCenter[1]{\AtPageUpperLeft{%
-  \put(\LenToUnit{.5\paperwidth},\LenToUnit{-\paperheight}){#1}}%
-}
+  \put(\LenToUnit{.5\paperwidth},\LenToUnit{-\paperheight}){#1}}}%
+\newcommand\AtPageLowishCenter[1]{\AtPageUpperLeft{%
+  \put(\LenToUnit{.5\paperwidth},\LenToUnit{-.96\paperheight}){#1}}}
 \newcommand\AtTextUpperLeft[1]{%
   \begingroup
     \setlength\@tempdima{1in}%
@@ -295,7 +298,7 @@
 \ifnaaclfinal\else\pagenumbering{arabic}
 \AddToShipoutPicture{%
 \ifnaaclfinal\else
-\AtPageLowerCenter{\thepage}
+\AtPageLowishCenter{\thepage}
 \naaclruleroffset=\textheight
 \advance\naaclruleroffset4pt
   \AtTextUpperLeft{%
