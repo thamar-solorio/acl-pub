@@ -125,36 +125,36 @@
 %% 
 %% Happy users are requested to send [Martin] a postcard. :-)
 %%
-\newcommand{\@EveryShipout@Hook}{}
-\newcommand{\@EveryShipout@AtNextHook}{}
-\newcommand*{\EveryShipout}[1]
-   {\g@addto@macro\@EveryShipout@Hook{#1}}
-\newcommand*{\AtNextShipout}[1]
-   {\g@addto@macro\@EveryShipout@AtNextHook{#1}}
-\newcommand{\@EveryShipout@Shipout}{%
-   \afterassignment\@EveryShipout@Test
+\newcommand{\@EveryShipoutACL@Hook}{}
+\newcommand{\@EveryShipoutACL@AtNextHook}{}
+\newcommand*{\EveryShipoutACL}[1]
+   {\g@addto@macro\@EveryShipoutACL@Hook{#1}}
+\newcommand*{\AtNextShipoutACL@}[1]
+   {\g@addto@macro\@EveryShipoutACL@AtNextHook{#1}}
+\newcommand{\@EveryShipoutACL@Shipout}{%
+   \afterassignment\@EveryShipoutACL@Test
    \global\setbox\@cclv= %
    }
-\newcommand{\@EveryShipout@Test}{%
+\newcommand{\@EveryShipoutACL@Test}{%
    \ifvoid\@cclv\relax
-      \aftergroup\@EveryShipout@Output
+      \aftergroup\@EveryShipoutACL@Output
    \else
-      \@EveryShipout@Output
+      \@EveryShipoutACL@Output
    \fi%
    }
-\newcommand{\@EveryShipout@Output}{%
-   \@EveryShipout@Hook%
-   \@EveryShipout@AtNextHook%
-      \gdef\@EveryShipout@AtNextHook{}%
-   \@EveryShipout@Org@Shipout\box\@cclv%
+\newcommand{\@EveryShipoutACL@Output}{%
+   \@EveryShipoutACL@Hook%
+   \@EveryShipoutACL@AtNextHook%
+      \gdef\@EveryShipoutACL@AtNextHook{}%
+   \@EveryShipoutACL@Org@Shipout\box\@cclv%
    }
-\newcommand{\@EveryShipout@Org@Shipout}{}
-\newcommand*{\@EveryShipout@Init}{%
+\newcommand{\@EveryShipoutACL@Org@Shipout}{}
+\newcommand*{\@EveryShipoutACL@Init}{%
    \message{ABD: EveryShipout initializing macros}%
-   \let\@EveryShipout@Org@Shipout\shipout
-   \let\shipout\@EveryShipout@Shipout
+   \let\@EveryShipoutACL@Org@Shipout\shipout
+   \let\shipout\@EveryShipoutACL@Shipout
    }
-\AtBeginDocument{\@EveryShipout@Init}
+\AtBeginDocument{\@EveryShipoutACL@Init}
 
 %% ----- Set up for placing additional items into the submitted version --MM
 %%
@@ -233,7 +233,7 @@
     \fi
   \egroup
 }
-\EveryShipout{\@ShipoutPicture}
+\EveryShipoutACL{\@ShipoutPicture}
 \newif\ifESO@dvips\ESO@dvipsfalse 
 \newif\ifESO@grid\ESO@gridfalse
 \newif\ifESO@texcoord\ESO@texcoordfalse
