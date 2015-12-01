@@ -3,5 +3,4 @@ _site
 *.bbl
 *.blg
 *.log
-*.pdf
 *.synctex.gz
