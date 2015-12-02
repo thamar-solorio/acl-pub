@@ -7,7 +7,7 @@ NAACL 2016 style files and publication instructions
 ===================================================
 
 The [call for papers](http://naacl.org/naacl-hlt-2016/cfp.html) is posted.
-Please format your submission according to the <a href="assets/files/naaclhlt2016/naaclhlt2016.pdf" download>instructions</a> below, using
+Please format your submission according to the <a href="assets/files/naaclhlt2016-latex/naaclhlt2016.pdf" download>instructions</a> below, using
 one of our provided templates.
 
 <div class="panel panel-default col-lg-12">
@@ -70,7 +70,7 @@ one of our provided templates.
 <div class="panel panel-default col-lg-12">
   <div class="panel-body">
   <div class="embed-responsive embed-responsive-4by3">
-    <iframe src="https://docs.google.com/viewer?url=http://naacl.org/naacl-pubs/assets/files/naaclhlt2016/naaclhlt2016.pdf&embedded=true"></iframe>
+    <iframe src="https://docs.google.com/viewer?url=http://naacl.org/naacl-pubs/assets/files/naaclhlt2016-latex/naaclhlt2016.pdf&embedded=true"></iframe>
   </div>
   </div>
 </div>
