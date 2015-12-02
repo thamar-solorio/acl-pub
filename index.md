@@ -6,39 +6,75 @@ title: NAACL publications
 NAACL 2016 style files and publication instructions
 ===================================================
 
-This page will be regularly updated with information
-for two groups of people: 
-
-1. **Researchers** submitting papers (first for peer review, and later the camera ready
-versions of accepted papers), and 
-2. **Organizers** of co-hosted conferences and workshops (to be determined).
-
-[Email](mailto:naacl-pub-chairs@googlegroups.com) the publications chairs
-if you have questions about preparing your paper or proceedings.
-
-Information for authors
------------------------
- 
 The [call for papers](http://naacl.org/naacl-hlt-2016/cfp.html) is posted.
-To prepare your paper, please use the NAACL 2016 style files,
-which you can obtain several ways:
-        
-<div class="btn-group">
-  <a href="https://www.overleaf.com/latex/templates/template-for-naacl-hlt-2016-paper/pqmwqxwxvcwc#.Vh0brBNVhBc">
-    <button type="button" class="btn btn-success">Overleaf template</button>
-  </a>
-  <a href="https://www.sharelatex.com/templates/561d18fc0a4973e35abe0d75">
-    <button type="button" class="btn btn-success">ShareLaTeX template</button>
-  </a>
-  <a href="assets/files/naaclhlt2016.tgz">
-    <button type="button" class="btn btn-primary">Download .tgz</button>
-  </a>
-  <a href="assets/files/naaclhlt2016.zip">
-    <button type="button" class="btn btn-primary">Download .zip</button>
-  </a>
+Please format your submission according to the <a href="assets/files/naaclhlt2016/naaclhlt2016.pdf" download>instructions</a> below, using
+one of our provided templates.
+
+<div class="panel panel-default col-lg-12">
+  <div class="col-lg-4">
+    <h4>LaTeX style files</h4>
+    <a href="assets/files/naaclhlt2016-latex.tgz">
+      <button type="button" class="btn btn-primary">Download .tgz with all LaTeX files</button>
+    </a><br/>
+    <div class="col-xs-12" style="height:3px;"></div>
+    <a href="assets/files/naaclhlt2016-latex.zip">
+      <button type="button" class="btn btn-primary">Download .zip with all LaTeX files</button>
+    </a>
+    <div>Or, download individual files:</div>
+    <ul>
+      <li> <a href="assets/files/naaclhlt2016-latex/naaclhlt2016.bib" download>naaclhlt2016.bib</a> </li>
+      <li> <a href="assets/files/naaclhlt2016-latex/naaclhlt2016.bst" download>naaclhlt2016.bst</a> </li>
+      <li> <a href="assets/files/naaclhlt2016-latex/naaclhlt2016.pdf" download>naaclhlt2016.pdf</a> </li>
+      <li> <a href="assets/files/naaclhlt2016-latex/naaclhlt2016.sty" download>naaclhlt2016.sty</a> </li>
+      <li> <a href="assets/files/naaclhlt2016-latex/naaclhlt2016.tex" download>naaclhlt2016.tex</a> </li>
+    </ul>
+  </div>
+  
+  <div class="col-lg-4">
+    <h4>Microsoft Word templates</h4>
+    <div>
+      <a href="assets/files/naaclhlt2016-word.tgz">
+        <button type="button" class="btn btn-primary">Download .tgz with Word templates</button>
+      </a>
+    </div>
+    <div class="col-xs-12" style="height:3px;"></div>
+    <div>
+      <a href="assets/files/naaclhlt2016-word.zip">
+        <button type="button" class="btn btn-primary">Download .zip with Word templates</button>
+      </a>
+    </div>
+    <div>Or, download individual files:</div>
+    <ul>
+      <li> <a href="assets/files/naaclhlt2016-word/naaclhlt2016.dotx" download>naaclhlt2016.dotx</a> </li>
+      <li> <a href="assets/files/naaclhlt2016-word/naaclhlt2016_camera_ready.docx" download>naaclhlt2016_camera_ready.docx</a> </li>
+      <li> <a href="assets/files/naaclhlt2016-word/naaclhlt2016_submitting.docx" download>naaclhlt2016_submitting.docx</a> </li>
+    </ul>
+  </div>
+  
+  <div class="col-lg-4">
+    <h4>Online LaTeX templates</h4>
+    <a href="https://www.overleaf.com/latex/templates/template-for-naacl-hlt-2016-paper/pqmwqxwxvcwc#.Vh0brBNVhBc">
+      <button type="button" class="btn btn-success">Open template in Overleaf</button>
+    </a><br/>
+    <div class="col-xs-12" style="height:3px;"></div>
+    <a href="https://www.sharelatex.com/templates/561d18fc0a4973e35abe0d75">
+      <button type="button" class="btn btn-success">Open template in ShareLaTeX</button>
+    </a>
+    <div>Using either of the above sites, you
+      can prepare your paper entirely online 
+      in a full-featured LaTeX environment.
+    </div>
+  </div>
+</div>
+  
+<div class="panel panel-default col-lg-12">
+  <div class="panel-body">
+  <div class="embed-responsive embed-responsive-4by3">
+    <iframe src="https://docs.google.com/viewer?url=http://naacl.org/naacl-pubs/assets/files/naaclhlt2016/naaclhlt2016.pdf&embedded=true"></iframe>
+  </div>
+  </div>
 </div>
 
-<p>
 <div class="panel panel-default">
   <div class="panel-heading"><b>Important dates</b></div>
   <ul class="list-group">
@@ -56,7 +92,18 @@ which you can obtain several ways:
     </li>
   </ul>
 </div>
-</p>
+
+
+This page will be regularly updated with information
+for two groups of people: 
+
+1. **Researchers** submitting papers (first for peer review, and later the camera ready
+versions of accepted papers), and 
+2. **Organizers** of co-hosted conferences and workshops (to be determined).
+
+[Email](mailto:naacl-pub-chairs@googlegroups.com) the publications chairs
+if you have questions about preparing your paper or proceedings.
+</div>
 
 #### Acknowledgments
 
