@@ -34,13 +34,13 @@ one of our provided templates.
     <h4>Microsoft Word templates</h4>
     <div>
       <a href="assets/files/naaclhlt2016-word.tgz">
-        <button type="button" class="btn btn-primary">Download .tgz with Word templates</button>
+        <button type="button" class="btn btn-warning">Download .tgz with Word templates</button>
       </a>
     </div>
     <div class="col-xs-12" style="height:3px;"></div>
     <div>
       <a href="assets/files/naaclhlt2016-word.zip">
-        <button type="button" class="btn btn-primary">Download .zip with Word templates</button>
+        <button type="button" class="btn btn-warning">Download .zip with Word templates</button>
       </a>
     </div>
     <div>Or, download individual files:</div>
