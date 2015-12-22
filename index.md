@@ -103,7 +103,6 @@ versions of accepted papers), and
 
 [Email](mailto:naacl-pub-chairs@googlegroups.com) the publications chairs
 if you have questions about preparing your paper or proceedings.
-</div>
 
 #### Acknowledgments
 
