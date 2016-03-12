@@ -6,9 +6,14 @@ title: NAACL publications
 NAACL 2016 style files and publication instructions
 ===================================================
 
-The [call for papers](http://naacl.org/naacl-hlt-2016/cfp.html) is posted.
-Please format your submission according to the <a href="assets/files/naaclhlt2016-latex/naaclhlt2016.pdf" download>instructions</a> below, using
+Please format your camera-ready paper according to the <a href="assets/files/naaclhlt2016-latex/naaclhlt2016.pdf" download>instructions</a> below, using
 one of our provided templates.
+
+<div class="alert alert-info">
+  The camera-ready deadline is April 1. To remove the margin rulers and anonymization
+  features of the LaTeX submission template, simply uncomment the <code>\naaclfinalcopy</code>
+  command near the top of your .tex file.
+</div>
 
 <div class="panel panel-default col-lg-12">
   <div class="col-lg-4">
