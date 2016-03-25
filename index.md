@@ -10,7 +10,13 @@ Please format your camera-ready paper according to the <a href="assets/files/naa
 one of our provided templates.
 
 <div class="alert alert-info">
-  The camera-ready deadline is April 1. Camera-ready papers may include 9 pages
+  The camera-ready deadline is April 1. To upload your camera-ready paper, 
+  log into the NAACL submission page on 
+  <a href="https://www.softconf.com/naacl2016/papers/">START</a>, choose your
+  the paper from your list of submissions, and go to that paper's page to 
+  upload the final version.
+  
+  Camera-ready papers may include 9 pages
   of content, with unlimited pages for references. To remove the margin rulers and anonymization
   features of the LaTeX submission template, simply uncomment the <code>\naaclfinalcopy</code>
   command near the top of your .tex file.
