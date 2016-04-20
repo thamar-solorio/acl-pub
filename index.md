@@ -6,11 +6,18 @@ title: NAACL publications
 NAACL 2016 style files and publication instructions
 ===================================================
 
+<div class="alert alert-info">
+  <b>Workshop chairs</b>: instructions on production of your proceedings are <a href="book.html">here</a>.
+</div>
+
+Older news
+----------
+
+**The camera-ready deadline is past.** 
+
 Please format your camera-ready paper according to the <a href="assets/files/naaclhlt2016-latex/naaclhlt2016.pdf" download>instructions</a> below, using
 one of our provided templates.
-
-<div class="alert alert-info">
-  The camera-ready deadline is April 1. To upload your camera-ready paper, 
+  To upload your camera-ready paper, 
   log into the NAACL submission page on 
   <a href="https://www.softconf.com/naacl2016/papers/">START</a>, choose your
   the paper from your list of submissions, and go to that paper's page to 
@@ -20,7 +27,6 @@ one of our provided templates.
   of content, with unlimited pages for references. To remove the margin rulers and anonymization
   features of the LaTeX submission template, simply uncomment the <code>\naaclfinalcopy</code>
   command near the top of your .tex file.
-</div>
 
 <div class="panel panel-default col-lg-12">
   <div class="col-lg-4">
