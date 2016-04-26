@@ -1,6 +1,6 @@
 ---
 layout: default
-title: NAACL 2015 book information for workshop chairs
+title: NAACL 2016 book information for workshop chairs
 ---
 
 # How to produce proceedings for NAACL 2016
@@ -25,7 +25,7 @@ Generate tab, let the publications chairs know by e-mailing us at
 We will collect the books online using START. There is no need to
 e-mail us any zipped files.
 
-We will update this page periodically with NAACL 2015-specific details and answers to frequently
+We will update this page periodically with NAACL 2016-specific details and answers to frequently
 asked questions as they arise. If you encounter any problems with this
 process, please email us.
 
@@ -150,7 +150,7 @@ As an example, here are the values used for the main conference proceedings:
     URL	            http://naacl.org/naacl-hlt-2016/
     Book Title	    Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
     Month	        June
-    Year	        2015
+    Year	        2016
     Location	    San Diego, California
     Publisher	    Association for Computational Linguistics
     Chair 1	        Kevin Knight (USC Information Sciences Institute)
