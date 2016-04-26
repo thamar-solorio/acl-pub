@@ -3,11 +3,11 @@ layout: default
 title: NAACL 2015 book information for workshop chairs
 ---
 
-# How to produce proceedings for NAACL 2015
+# How to produce proceedings for NAACL 2016
 
 This page is for conference organizers (main conference, workshop &
 demo chairs) who need to put together a book for inclusion in the
-NAACL proceedings. The book deadline is **April 15**, unless you have
+NAACL proceedings. The book deadline is **May 10**, unless you have
 negotiated an extension.
 
 ## Instructions
@@ -142,30 +142,26 @@ we have it, we will place it in the Google spreadsheet.
 
 #### CDROM Tab
 
-Much of the information you need to fill out under the `CDROM` tab can
-be found
-[on this Google doc](https://docs.google.com/spreadsheets/d/1Pu8FiSNLzBYl67gBNrTrq_rZwBS-iGoGO7MgRceZ7fk/edit#gid=0). As
-an example, here are the values used for the main conference proceedings:
+As an example, here are the values used for the main conference proceedings:
 
     Abbreviation    NAACL-HLT
     Type	        Main Conference
-    Title	        The 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
-    URL	            http://naacl.org/naacl-hlt-2015/
-    Book Title	    Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
-    Month	        May--June
+    Title	        The 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
+    URL	            http://naacl.org/naacl-hlt-2016/
+    Book Title	    Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
+    Month	        June
     Year	        2015
-    Location	    Denver, Colorado
+    Location	    San Diego, California
     Publisher	    Association for Computational Linguistics
-    Chair 1	        Rada Mihalcea (University of Michigan)
-    Chair 2	        Joyce Chai (Michigan State University)
-    Chair 3	        Anoop Sarkar (Simon Fraser University)
+    Chair 1	        Kevin Knight (USC Information Sciences Institute)
+    Chair 2	        Ani Nenkova (University of Pennsylvania) 
+    Chair 3	        Owen Rambow (Columbia University)
     Chair 4	        TOBEFILLED-Jill Burstein (Educational Testing Service)
     Chair 5	        TOBEFILLED-Jill Burstein (Educational Testing Service)
     Chair 6	        TOBEFILLED-Jill Burstein (Educational Testing Service)
     Chair 7	        TOBEFILLED-Jill Burstein (Educational Testing Service)
     Chair 8	        TOBEFILLED-Jill Burstein (Educational Testing Service)
-    Bibtex URL	    http://www.aclweb.org/anthology/N15-1%03d
+    Bibtex URL	    http://www.aclweb.org/anthology/N16-1%03d
 
-**Please obtain the correct value** for `Bibtex URL` from
-  [this Google doc](https://docs.google.com/spreadsheets/d/1Pu8FiSNLzBYl67gBNrTrq_rZwBS-iGoGO7MgRceZ7fk/edit#gid=0).
+**The correct value** for `Bibtex URL` will be sent to you shortly
 
