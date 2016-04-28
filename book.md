@@ -142,6 +142,8 @@ we have it, we will place it in the Google spreadsheet.
 
 #### CDROM Tab
 
+You will need to fill out this tab with the correct values for your volume, 
+many of which can be found [here](https://docs.google.com/spreadsheets/d/1lqy0cL408H5JEcMV7crYvLZ02Fz8Q6QPUKjNbcpJ1TA/edit?usp=sharing).
 As an example, here are the values used for the main conference proceedings:
 
     Abbreviation    NAACL-HLT
@@ -163,5 +165,5 @@ As an example, here are the values used for the main conference proceedings:
     Chair 8	        TOBEFILLED-Jill Burstein (Educational Testing Service)
     Bibtex URL	    http://www.aclweb.org/anthology/N16-1%03d
 
-**The correct value** for `Bibtex URL` will be sent to you shortly
+**The correct value** for `Bibtex URL` can be found [here](https://docs.google.com/spreadsheets/d/1lqy0cL408H5JEcMV7crYvLZ02Fz8Q6QPUKjNbcpJ1TA/edit?usp=sharing)
 
