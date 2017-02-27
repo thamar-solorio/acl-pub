@@ -10,6 +10,9 @@ This page is for conference organizers (main conference, workshop &
 demo chairs) who need to put together a book for inclusion in the
 ACL proceedings. 
 
+You will need your ACL ID Prefix and your ISBN number.
+You can find those here, in [this ACL 2017 Workshops google doc](https://docs.google.com/spreadsheets/d/1x1RtUjAy-S_YhvTXWTrUc5xs9_4HkF0pOGynhRE963M/edit?usp=sharing).
+
 ## Instructions
 
 You should be able to produce your proceedings entirely within the
