@@ -7,25 +7,31 @@ updated: 26 February by MMitchell
 ACL 2017 style files and publication instructions
 ===================================================
 
+Compiling the Proceedings
+---------------
+
 <div class="alert alert-info">
-  <b>Workshop chairs</b>: instructions on production of your proceedings are <a href="book.md">here</a>.
+  <b>Detailed instructions for compiling on softconf using the START scripts are <a href="book.md">here</a>.
 </div>
 
-Please format your camera-ready paper using
-one of our provided templates.
-  To upload your camera-ready paper, 
-  log into the ACL submission page on 
-  <a href="https://www.softconf.com/acl2017/papers/">START</a>, choose your
-  the paper from your list of submissions, and go to that paper's page to 
-  upload the final version.
+The Process
+---------------
+  1.  Authors use the templates below, to create the camera-ready papers.
   
-  Camera-ready papers may include 9 pages
-  of content, with unlimited pages for references. To remove the margin rulers and anonymization
-  features of the LaTeX submission template, simply uncomment the <code>\aclfinalcopy</code>
-  command near the top of your .tex file.
+  2.  Remind authors that camera-ready long papers may include 9 pages
+      of content, with unlimited pages for references. To remove the margin rulers and anonymization
+      features of the LaTeX submission template, simply uncomment the <code>\aclfinalcopy</code>
+      command near the top of the .tex file.
+
+  3.  Authors upload camera-ready papers
+      by logging into the ACL submission page on
+      <a href="https://www.softconf.com/acl2017/papers/">START</a>.
+
+  4.  Once they've uploaded to START, now you <a href="book.md">organize within START</a>, and download
+      the final proceedings.
 
 
-Templates
+The Templates
 ---------------
 
 <div class="panel panel-default col-lg-12">
@@ -72,7 +78,8 @@ Templates
 </div> 
 
 
-#### Important Dates 
+Important Dates 
+---------------
 
 <div class="panel panel-default">
   <ul class="list-group">
@@ -106,7 +113,9 @@ for **Organizers** of co-hosted conferences and workshops.
 [Email](mailto:acl-pub-chairs@googlegroups.com) the publications chairs
 if you have questions about preparing your paper or proceedings.
 
-#### Authors
+
+Authors
+---------------
 
 This [git repository](https://github.com/acl-org/acl-pubs) 
 is currenty maintained by the 2017 ACL publications chairs advisor, 
