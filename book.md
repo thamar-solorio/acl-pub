@@ -8,8 +8,7 @@ updated: 26 February by MMitchell
 
 This page is for conference organizers (main conference, workshop &
 demo chairs) who need to put together a book for inclusion in the
-ACL proceedings. The book deadline is ****, unless you have
-negotiated an extension.
+ACL proceedings. 
 
 ## Instructions
 
@@ -144,7 +143,7 @@ we have it, we will place it in the Google spreadsheet.
 #### CDROM Tab
 
 You will need to fill out this tab with the correct values for your volume, 
-many of which can be found [here](https://docs.google.com/spreadsheets/d/1gPI2pV3Q4d54y8it9iSc0MTndw3AUcmbR3LAokgWs0Q/edit?usp=sharing).
+many of which can be found [here](https://docs.google.com/spreadsheets/d/1x1RtUjAy-S_YhvTXWTrUc5xs9_4HkF0pOGynhRE963M/edit?usp=sharing).
 As an example, here are the values used for the main conference proceedings:
 
     Abbreviation    ACL-HLT
@@ -166,7 +165,7 @@ As an example, here are the values used for the main conference proceedings:
     Chair 8	        TOBEFILLED-Jill Burstein (Educational Testing Service)
     Bibtex URL	    http://www.aclweb.org/anthology/P17-1%03d
 
-**The correct value** for `Bibtex URL` can be found [here](https://docs.google.com/spreadsheets/d/1gPI2pV3Q4d54y8it9iSc0MTndw3AUcmbR3LAokgWs0Q/edit?usp=sharing)
+**The correct value** for `Bibtex URL` can be found [here](https://docs.google.com/spreadsheets/d/1x1RtUjAy-S_YhvTXWTrUc5xs9_4HkF0pOGynhRE963M/edit?usp=sharing)
 
 That %03d at the end of the Bibtex URL is important.  This specifies how many digits will follow the given URL prefix.  %03d specifies 3 digits, so by specifying %03d after http://www.aclweb.org/anthology/P17-1, we can create, e.g., http://www.aclweb.org/anthology/P17-1000.pdf.  
 

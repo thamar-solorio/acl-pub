@@ -18,17 +18,23 @@ The Process
 ---------------
   1.  Authors use the templates below, to create the camera-ready papers.
   
-  2.  Remind authors that camera-ready long papers may include 9 pages
-      of content, with unlimited pages for references. To remove the margin rulers and anonymization
-      features of the LaTeX submission template, simply uncomment the <code>\aclfinalcopy</code>
-      command near the top of the .tex file.
+  2.  Remind authors: 
+        i.  Camera-ready long papers may include 9 pages
+       ii.  Unlimited pages for references
+      iii.  To remove the margin rulers and anonymization features of the LaTeX submission  
+            template, simply uncomment the <code>\aclfinalcopy</code> command near the top of the .tex file.
 
   3.  Authors upload camera-ready papers
       by logging into the ACL submission page on
       <a href="https://www.softconf.com/acl2017/papers/">START</a>.
 
-  4.  Once they've uploaded to START, now you <a href="book.md">organize within START</a>, and download
-      the final proceedings.
+  4.  Once they've uploaded to START, now you:
+        i.   <a href="book.md">Generate proceedings within START</a>
+        ii.  Download them to see all issues
+        iii. Address the issues in START
+        iv.  Repeat steps i-iii until the proceedings are good to go.
+        
+  5.  E-mail a link to your final proceedings to [acl-pub-chairs](mailto:acl-pub-chairs@googlegroups.com).
 
 
 The Templates
