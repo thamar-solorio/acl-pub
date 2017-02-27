@@ -70,6 +70,8 @@ one of our provided templates.
   </div>
 </div> --->
 
+<div></div>
+
 <div class="panel panel-default">
   <div class="panel-heading"><b>Important dates</b></div>
   <ul class="list-group">
@@ -103,7 +105,7 @@ for **Organizers** of co-hosted conferences and workshops.
 [Email](mailto:acl-pub-chairs@googlegroups.com) the publications chairs
 if you have questions about preparing your paper or proceedings.
 
-#### Acknowledgments
+#### Authors
 
 This [git repository](https://github.com/acl-org/acl-pubs) 
 is currenty maintained by the 2017 ACL publications chairs advisor, 
