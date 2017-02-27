@@ -68,7 +68,7 @@ one of our provided templates.
     <!-- <iframe src="https://docs.google.com/viewer?url=#.pdf"></iframe> --->
   </div>
   </div>
-</div> --->
+</div> 
 
 
 <div class="panel panel-default">
