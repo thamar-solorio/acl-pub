@@ -1,13 +1,14 @@
 ---
 layout: default
-title: NAACL 2016 book information for workshop chairs
+title: ACL 2017 book information for workshop chairs
+updated: 26 February by MMitchell
 ---
 
-# How to produce proceedings for NAACL 2016
+# How to produce proceedings for ACL 2017
 
 This page is for conference organizers (main conference, workshop &
 demo chairs) who need to put together a book for inclusion in the
-NAACL proceedings. The book deadline is **May 10**, unless you have
+ACL proceedings. The book deadline is ****, unless you have
 negotiated an extension.
 
 ## Instructions
@@ -17,15 +18,15 @@ START manager console.  The relevant page for producing the book is
 found under the Conference Program heading, following the `ACLPUB`
 link. From there, instructions on book assembly can be found under the
 Instructions tab, and by reading the
-[ACLPUB HOWTO](aclpub-howto-2010.html).
+[ACLPUB HOWTO](aclpub-howto-2017.html).
 
 Once your book builds without error using the `All` button under the
 Generate tab, let the publications chairs know by e-mailing us at
-[naacl-pub-chairs@googlegroups.com](mailto:naacl-pub-chairs@googlegroups.com).
+[acl-pub-chairs@googlegroups.com](mailto:acl-pub-chairs@googlegroups.com).
 We will collect the books online using START. There is no need to
 e-mail us any zipped files.
 
-We will update this page periodically with NAACL 2016-specific details and answers to frequently
+We will update this page periodically with ACL 2017-specific details and answers to frequently
 asked questions as they arise. If you encounter any problems with this
 process, please email us.
 
@@ -38,7 +39,7 @@ out <a href="camera-ready-faq.html">in this document</a>. In particular, there a
 areas of compliance you should look for:
 
 1. *Margins*. Papers should fit entirely within the margins prescribed by the
-   conference booklet. The [ACLPUB HOWTO](aclpub-howto-2010.html)
+   conference booklet. The [ACLPUB HOWTO](aclpub-howto-2017.html)
    provides detailed instructions on how to adjust
    margin offsets for papers that need to be shifted.
 
@@ -60,7 +61,7 @@ areas of compliance you should look for:
 You will need to produce a schedule for your workshop/session while
 generating the proceedings.  **The schedule deadline is the same as
 the book deadline!** Please follow the instructions in the
-[ACLPUB HOWTO](aclpub-howto-2010.html), or take a look at this
+[ACLPUB HOWTO](aclpub-howto-2017.html), or take a look at this
 [sample order file from SSST-7](files/sample-order.txt). We will build
 the conference handbook from the `order` file, which you can either
 edit manually in START's provided textbox or which is created by the
@@ -143,17 +144,17 @@ we have it, we will place it in the Google spreadsheet.
 #### CDROM Tab
 
 You will need to fill out this tab with the correct values for your volume, 
-many of which can be found [here](https://docs.google.com/spreadsheets/d/1lqy0cL408H5JEcMV7crYvLZ02Fz8Q6QPUKjNbcpJ1TA/edit?usp=sharing).
+many of which can be found [here](https://docs.google.com/spreadsheets/d/1gPI2pV3Q4d54y8it9iSc0MTndw3AUcmbR3LAokgWs0Q/edit?usp=sharing).
 As an example, here are the values used for the main conference proceedings:
 
-    Abbreviation    NAACL-HLT
+    Abbreviation    ACL-HLT
     Type	        Main Conference
-    Title	        The 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
-    URL	            http://naacl.org/naacl-hlt-2016/
-    Book Title	    Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
-    Month	        June
-    Year	        2016
-    Location	    San Diego, California
+    Title	        The 2017 Annual Meeting of the Association for Computational Linguistics
+    URL	            http://acl2017.org
+    Book Title	    Proceedings of the 2017 Annual Meeting of the Association for Computational Linguistics
+    Month	        July-August
+    Year	        2017
+    Location	    Vancouver, Canada
     Publisher	    Association for Computational Linguistics
     Chair 1	        Kevin Knight (USC Information Sciences Institute)
     Chair 2	        Ani Nenkova (University of Pennsylvania) 
@@ -163,7 +164,12 @@ As an example, here are the values used for the main conference proceedings:
     Chair 6	        TOBEFILLED-Jill Burstein (Educational Testing Service)
     Chair 7	        TOBEFILLED-Jill Burstein (Educational Testing Service)
     Chair 8	        TOBEFILLED-Jill Burstein (Educational Testing Service)
-    Bibtex URL	    http://www.aclweb.org/anthology/N16-1%03d
+    Bibtex URL	    http://www.aclweb.org/anthology/P17-1%03d
 
-**The correct value** for `Bibtex URL` can be found [here](https://docs.google.com/spreadsheets/d/1lqy0cL408H5JEcMV7crYvLZ02Fz8Q6QPUKjNbcpJ1TA/edit?usp=sharing)
+**The correct value** for `Bibtex URL` can be found [here](https://docs.google.com/spreadsheets/d/1gPI2pV3Q4d54y8it9iSc0MTndw3AUcmbR3LAokgWs0Q/edit?usp=sharing)
 
+That %03d at the end of the Bibtex URL is important.  This specifies how many digits will follow the given URL prefix.  %03d specifies 3 digits, so by specifying %03d after http://www.aclweb.org/anthology/P17-1, we can create, e.g., http://www.aclweb.org/anthology/P17-1000.pdf.  
+
+For workshops, we provide you with enough prefix that you need to specify just %02d additional following digits.  For example, if you're the 5th workshop listed, your bibtex URL will look like this: 
+
+    Bibtex URL	    http://www.aclweb.org/anthology/W17-05%02d
