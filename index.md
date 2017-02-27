@@ -11,7 +11,7 @@ Compiling the Proceedings
 ---------------
 
 <div class="alert alert-info">
-  <b>Detailed instructions for compiling on softconf using the START scripts are <a href="book.md">here</a>.
+  Detailed instructions for compiling on softconf using the START scripts are <a href="book.md">here</a>.
 </div>
 
 The Process
