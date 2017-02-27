@@ -62,15 +62,14 @@ one of our provided templates.
   </div>
 </div>
   
-<!-- <div class="panel panel-default col-lg-12">
+<div class="panel panel-default col-lg-12">
   <div class="panel-body">
   <div class="embed-responsive embed-responsive-4by3">
-    <iframe src="https://docs.google.com/viewer?url=#.pdf"></iframe>
+    <!-- <iframe src="https://docs.google.com/viewer?url=#.pdf"></iframe>--->
   </div>
   </div>
 </div> --->
 
-<div></div>
 
 <div class="panel panel-default">
   <div class="panel-heading"><b>Important dates</b></div>
