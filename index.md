@@ -8,7 +8,7 @@ ACL 2017 style files and publication instructions
 ===================================================
 
 <div class="alert alert-info">
-  <b>Workshop chairs</b>: instructions on production of your proceedings are <a href="book.html">here</a>.
+  <b>Workshop chairs</b>: instructions on production of your proceedings are <a href="book.md">here</a>.
 </div>
 
 News
