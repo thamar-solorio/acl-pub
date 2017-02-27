@@ -173,3 +173,25 @@ That %03d at the end of the Bibtex URL is important.  This specifies how many di
 For workshops, we provide you with enough prefix that you need to specify just %02d additional following digits.  For example, if you're the 5th workshop listed, your bibtex URL will look like this: 
 
     Bibtex URL	    http://www.aclweb.org/anthology/W17-05%02d
+
+#### Authors
+
+This [git repository](https://github.com/acl-org/acl-pubs) 
+is currenty maintained by the 2017 ACL publications chairs advisor, 
+[Margaret Mitchell](http://www.m-mitchell.com/).
+
+The material
+included in it has evolved over many years through the work of a 
+large number of volunteers, including past NAACL publications chairs
+[Margaret Mitchell](http://www.m-mitchell.com/),
+[Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/),
+[Matt Post](http://www.cs.jhu.edu/~post/),
+[Colin Cherry](https://sites.google.com/site/colinacherry/),
+[Nizar Habash](http://www.nizarhabash.com/),
+[Claudia Leacock](https://www.linkedin.com/in/claudialeacockphd),
+[Joakim Nivre](http://stp.lingfil.uu.se/~nivre/),
+[Matt Post](http://www.cs.jhu.edu/~post/),
+[Noah Smith](http://www.cs.cmu.edu/~nasmith/),
+[William Schuler](https://www.ling.ohio-state.edu/~schuler/),
+and
+[Richard Wicentowski](http://www.cs.swarthmore.edu/~richardw/).
