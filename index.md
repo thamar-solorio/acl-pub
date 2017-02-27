@@ -11,10 +11,7 @@ ACL 2017 style files and publication instructions
   <b>Workshop chairs</b>: instructions on production of your proceedings are <a href="book.md">here</a>.
 </div>
 
-News
-----------
-
-Please format your camera-ready paper according to the ***instructions*** below, using
+Please format your camera-ready paper using
 one of our provided templates.
   To upload your camera-ready paper, 
   log into the ACL submission page on 
@@ -26,6 +23,10 @@ one of our provided templates.
   of content, with unlimited pages for references. To remove the margin rulers and anonymization
   features of the LaTeX submission template, simply uncomment the <code>\aclfinalcopy</code>
   command near the top of your .tex file.
+
+
+Templates
+---------------
 
 <div class="panel panel-default col-lg-12">
   <div class="col-lg-4">
