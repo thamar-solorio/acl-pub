@@ -71,8 +71,9 @@ one of our provided templates.
 </div> 
 
 
+#### Important Dates 
+
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Important dates</b></div>
   <ul class="list-group">
     <li class="list-group-item">
       <span class="badge">Jan 6</span>
