@@ -1,6 +1,6 @@
   
 The files are numbered in order, from 001 to 002.  
-Simply click them, e.g., [001.index.md](https://github.com/acl-org/acl-pub/blob/gh-pages/001.index.md), to view within githubg.
+Simply click them, e.g., [001.index.md](https://github.com/acl-org/acl-pub/blob/gh-pages/001.index.md), to view within github.
 
 [*001.index.md* Will give you an overview of the end-to-end process as a publication chair](https://github.com/acl-org/acl-pub/blob/gh-pages/001.index.md)
 
