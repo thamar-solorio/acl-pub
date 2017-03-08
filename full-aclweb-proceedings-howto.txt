@@ -1,10 +1,10 @@
 (1) Download the relevant tar balls from all of the workshops/tutorials that will be including in the full proceedings.
--- One way to do this is to use naacl-pubs/assets/files/aclweb_proceedings/download-proceedings.sh
+-- One way to do this is to use acl-pubs/assets/files/aclweb_proceedings/download-proceedings.sh
 -- Usage: ./download-proceedings.sh ${softconf conference acronym in url} ${name of file listing workshop acronyms shown in softconf urls}
--- Example: ./download-proceedings.sh naacl2016 workshops.txt
+-- Example: ./download-proceedings.sh acl2017 workshops.txt
 
 (2) Make the anthology using the make_anthology script, and specifying the workshops/conference proceedings names; the volume IDs; and the volume numbers.
--- See what is already there in naacl-pubs/assets/files/aclweb_proceedings/make_anthology.sh
+-- See what is already there in acl-pubs/assets/files/aclweb_proceedings/make_anthology.sh
 -- Change to reflect the different proceedings collections for the current conference.
 -- Usage: ./make_anthology.sh
 
