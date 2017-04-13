@@ -102,6 +102,7 @@
   % It provides a backup, no-op definiton of \href.
   % This is necessary because \href command is used in the acl_natbib.bst file.
   \def\href#1#2{{#2}}
+  \RequirePackage{url}
 \fi
 
 \typeout{Conference Style for ACL 2017}
@@ -289,7 +290,7 @@
 
 %% ----- Submitted version markup: Page numbers, ruler, and confidentiality.  Using ideas/code from cvpr.sty 2015. --MM
 
-\font\naaclhv = phvb at 8pt 
+\font\naaclhv  = phvb at 8pt 
 
 %% Define vruler %%
 
@@ -319,7 +320,7 @@
 \cv@lineheight=#1\global\aclrulercount=#2%
 \cv@tot\cv@boxheight\divide\cv@tot\cv@lineheight\advance\cv@tot2%
 \cv@refno1\vskip-\cv@lineheight\vskip1ex%
-\loop\setbox\cv@tmpbox=\hbox to0cm{{\textcolor{gray}{\naaclhv\hfil\fillzeros[#4]\aclrulercount}}}%
+\loop\setbox\cv@tmpbox=\hbox to0cm{{\naaclhv\hfil\fillzeros[#4]\aclrulercount}}%
 \ht\cv@tmpbox\cv@lineheight\dp\cv@tmpbox0pt\box\cv@tmpbox\break
 \advance\cv@refno1\global\advance\aclrulercount#3\relax
 \ifnum\cv@refno<\cv@tot\repeat}}\endgroup}%
