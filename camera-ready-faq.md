@@ -92,20 +92,20 @@ title: NAACL 2018 instructions for camera-ready paper submissions
       couple of ways to check this: 
       <ul> 
       <li>    
-      - Using pdfinfo. The `pdfinfo` command should include
+      Using pdfinfo. The `pdfinfo` command should include
 
             Page size:      612 x 792 pts (letter)
 
         in its output.
       </li>
       <li>
-      - Using Apple's Preview.app. Open the PDF, and type &#8984-I. It should report the
+      Using Apple's Preview.app. Open the PDF, and type &#8984-I. It should report the
         correct page size. 
         
         ![](assets/images/apple-preview.png).
       </li>
       <li>
-      - Using Adobe Acrobat. Open the PDF, navigate to File, Properties..., Description. The
+      Using Adobe Acrobat. Open the PDF, navigate to File, Properties..., Description. The
         field labeled "Page Size" should read 8.50 x 11.00 in.
 
       ![](assets/images/acrobat.png)
@@ -120,10 +120,10 @@ title: NAACL 2018 instructions for camera-ready paper submissions
      same position on each page. Here is an example of a page printed
      with the margin boundaries that demonstrates this shifting:
 
-    ![](assets/images/margin-shifted.png)
+   ![](assets/images/margin-shifted.png)
 
-     **<font color="red">START provides you with the means to fix this
-     margin offset; please do!</font>**. To do so, after you upload
+   <font color="red">START provides you with the means to fix this
+     margin offset; please do!</font>. To do so, after you upload
      your camera-ready paper, you will be presented with a small form
      that presents you with guides and allows you to adjust these
      offsets. Click on the "Test" button, then <b>click the link that
@@ -132,16 +132,16 @@ title: NAACL 2018 instructions for camera-ready paper submissions
      of the proceedings containing only your paper, annotated with
      guidelines that help you shift the content of your paper.
 
-     ![](assets/images/margin-offsets.png)
+   ![](assets/images/margin-offsets.png)
 
-     Please determine the required adjustments and enter them here. You can click "(click here to
-     show/hide instructions)" for more information on how to do this.
+   Please determine the required adjustments and enter them here. You can click "(click here to
+   show/hide instructions)" for more information on how to do this.
 
    <a name="format-fonts"></a>
-   - **If your paper uses Asian fonts,** please ensure that they are
-     embedded in the PDF file so that they can be displayed by
-     non-Asian versions of the PDF reader.  (Asian versions ship with
-     a larger set of default fonts.)
+   **If your paper uses Asian fonts,** please ensure that they are
+   embedded in the PDF file so that they can be displayed by
+   non-Asian versions of the PDF reader.  (Asian versions ship with
+   a larger set of default fonts.)
      
      
 #  What if my paper includes graphics?
