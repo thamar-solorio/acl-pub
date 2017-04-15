@@ -82,7 +82,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 
 #  How do I ensure that my file is correctly formatted?
 
-   - [Make sure the paper is US Letter-sized](#format-size")
+   - [Make sure the paper is US Letter-sized](#format-size)
    - [Adjust the margin offsets when uploading](#format-margins)
    - [Embed custom fonts](#format-fonts)
 
