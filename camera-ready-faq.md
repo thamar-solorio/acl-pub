@@ -15,8 +15,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 -  [What if my paper's title or author list has changed?]
 -  [My question isn't answered here...?]
 
-
-- What common mistakes do people make? What should I pay special attention to?
+* What common mistakes do people make? What should I pay special attention to?
 
    - When entering the metadata for your paper, **please** use the
      lookup mechanism to search for your co-authors' names by account
@@ -32,7 +31,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 
      ![Picture of Softconf user info fields](assets/images/userinfo.png)
 
--  When and where do I send my final camera-ready paper?
+*  When and where do I send my final camera-ready paper?
 
    You may submit the final
    version of your paper by
@@ -40,7 +39,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    and following the internal links. You should have received an email
    with more information about this procedure.
 
--  How should the final copy differ from the original submission?
+*  How should the final copy differ from the original submission?
 
    The camera-ready version of your paper should incorporate the
    comments of the reviewers as well as other changes you see fit to
@@ -53,18 +52,18 @@ title: NAACL 2018 instructions for camera-ready paper submissions
      viewed in black and white (to help the color-blind and those
      reading print-outs).
 
--  How long can it be?
+*  How long can it be?
 
    For both long and short papers, we allow one extra page to help
    address reviewer comments.  So long papers are permitted at most 9
    pages of text plus additional pages containing Acknowledgements, References, and Appendix.
    Short papers get 5 pages of text.
    
--  What's the deal with including an Appendix?  Do I include it as supplemental?
+* What's the deal with including an Appendix?  Do I include it as supplemental?
 
-   You can include an Appendix, but the paper writing must be self-contained before the Acknowledgements.
+   You can include an Appendix, but the paper writing must be self-contained before the Acknowledgements.  Attach it as supplemental.
 
--  What is the format for the camera-ready copy?
+*  What is the format for the camera-ready copy?
 
    The file must be in Portable Document Format (PDF) on US Letter
    paper (8.5 x 11 inches).  We strongly recommend the use of ACL
@@ -81,7 +80,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    [TeX live](http://www.tug.org/texlive/) (TeX Live 2014 is
    available).
 
--  How do I ensure that my file is correctly formatted?
+*  How do I ensure that my file is correctly formatted?
 
    - [Make sure the paper is US Letter-sized](#format-size")
    - [Adjust the margin offsets when uploading](#format-margins)
@@ -139,7 +138,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
      non-Asian versions of the PDF reader.  (Asian versions ship with
      a larger set of default fonts.)
 
--  What if my paper includes graphics?
+*  What if my paper includes graphics?
 
    Remember that you are providing a camera-ready copy.  Thus, artwork
    and photos should be included directly in the paper in their final
@@ -165,7 +164,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    any scale and take up little space (unless you are plotting many
    thousands of data points).
 
--  What about copyright?
+*  What about copyright?
 
    When you submit the paper, you will be asked to sign electronically
    (via the START Conference Manager) or physically the
@@ -180,7 +179,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    if applicable, your and their employers) that they authorize you to
    sign on their behalf.
 
--  What if my paper's title or author list has changed?
+*  What if my paper's title or author list has changed?
 
    Then please edit those metadata fields when you upload the
    camera-ready version, so that they will appear correctly in the
@@ -191,7 +190,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    name, etc). You can change this on
    [user settings page](https://www.softconf.com/naacl2015/papers/user/scmd.cgi?scmd=updateProfile).
 
--  My question isn't answered here...?
+*  My question isn't answered here...?
 
    Please email the publications chairs at
    [naacl-pub-chairs@googlegroups.com](mailto:naacl-pub-chairs@googlegroups.com).
