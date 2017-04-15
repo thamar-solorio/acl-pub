@@ -1,13 +1,13 @@
 ---
 layout: default
-title: NAACL 2015 instructions for camera-ready paper submissions
+title: NAACL 2018 instructions for camera-ready paper submissions
 ---
 
 -  When and where do I send my final camera-ready paper?
 
-   The deadline is Friday, March 20, 2015.  You may submit the final
+   You may submit the final
    version of your paper by
-   [navigating to the NAACL 2015 START login](https://www.softconf.com/naacl2015/papers)
+   [navigating to the NAACL 2018 START login](https://www.softconf.com/naacl2018/papers)
    and following the internal links. You should have received an email
    with more information about this procedure.
    
