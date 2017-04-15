@@ -8,5 +8,7 @@ Simply click them, e.g., [001.index.md](https://github.com/acl-org/acl-pub/blob/
 
 Notes
 -----
+
 MM: 2017.27.Feb: Updating for ACL 2017.
+
 MM: 2017.26 Feb: Forked from github.com/naacl-org to begin the "ACL style" section of the ACL github.
