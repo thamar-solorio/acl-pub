@@ -7,7 +7,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 -  [What common mistakes do people make? What should I pay special attention to?](#what-common-mistakes-do-people-make-what-should-i-pay-special-attention-to)
 -  [How should the final copy differ from the original submission?](#how-should-the-final-copy-differ-from-the-original-submission)
 -  [How long can it be?](#how-long-can-it-be)
--  [What's the deal with including an Appendix?  Do I include it as supplemental?](#whats-the-deal-with-including-an-appendix-do-i-include-it-as-supplemental)
+-  [What's the deal with including an Appendix? Do I include it as supplemental?](#whats-the-deal-with-including-an-appendix-do-i-include-it-as-supplemental)
 -  [What is the format for the camera-ready copy?](#what-is-the-format-for-the-camera-ready-copy)
 -  [How do I ensure that my file is correctly formatted?](#how-do-i-ensure-that-my-file-is-correctly-formatted)
 -  [What if my paper includes graphics?](#what-if-my-paper-includes-graphics)
@@ -59,7 +59,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    pages of text plus additional pages containing Acknowledgements, References, and Appendix.
    Short papers get 5 pages of text.
    
-# What's the deal with including an Appendix?  Do I include it as supplemental?
+# What's the deal with including an Appendix? Do I include it as supplemental?
 
    You can include an Appendix, but the paper writing must be self-contained before the Acknowledgements.  Attach it as supplemental.
 
