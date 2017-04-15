@@ -4,7 +4,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 ---
 
 -  [When and where do I send my final camera-ready paper?](#when-and-where-do-i-send-my-final-camera-ready-paper)
--  [What common mistakes do people make? What should I pay special attention to?](#what-common-mistakes-do-people-make-what-should-i-pay-attention-to)
+-  [What common mistakes do people make? What should I pay special attention to?](#what-common-mistakes-do-people-make-what-should-i-pay-special-attention-to)
 -  [How should the final copy differ from the original submission?](#how-should-the-final-copy-differ-from-the-original-submission)
 -  [How long can it be?](#how-long-can-it-be)
 -  [What's the deal with including an Appendix?  Do I include it as supplemental?](#whats-the-deal-with-including-an-appendix-do-i-include-it-as-supplemental)
