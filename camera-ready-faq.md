@@ -86,26 +86,31 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    - [Adjust the margin offsets when uploading](#format-margins)
    - [Embed custom fonts](#format-fonts)
 
-   <a name="format-size" />
+   <a name="format-size"></a>
    -  **Checking the paper size**. Your paper needs to be formatted to
       US Letter-sized (8.5 inches wide and 11 inches tall). Here are a
-      couple of ways to check this: <ul> <li><i>
-     
+      couple of ways to check this: 
+      <ul> 
+      <li>    
       - Using pdfinfo. The `pdfinfo` command should include
 
             Page size:      612 x 792 pts (letter)
 
         in its output.
-
+      </li>
+      <li>
       - Using Apple's Preview.app. Open the PDF, and type &#8984-I. It should report the
         correct page size. 
         
         ![](assets/images/apple-preview.png).
-
+      </li>
+      <li>
       - Using Adobe Acrobat. Open the PDF, navigate to File, Properties..., Description. The
         field labeled "Page Size" should read 8.50 x 11.00 in.
 
-        ![](assets/images/acrobat.png)
+      ![](assets/images/acrobat.png)
+      </li>
+      </ul>
 
    <a name="format-margins"></a>
    - **Adjusting margin offsets**. The text of your paper will almost
@@ -137,7 +142,8 @@ title: NAACL 2018 instructions for camera-ready paper submissions
      embedded in the PDF file so that they can be displayed by
      non-Asian versions of the PDF reader.  (Asian versions ship with
      a larger set of default fonts.)
-
+     
+     
 #  What if my paper includes graphics?
 
    Remember that you are providing a camera-ready copy.  Thus, artwork
