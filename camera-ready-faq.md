@@ -3,17 +3,17 @@ layout: default
 title: NAACL 2018 instructions for camera-ready paper submissions
 ---
 
--  [When and where do I send my final camera-ready paper?]
--  [What common mistakes do people make? What should I pay special attention to?]
--  [How should the final copy differ from the original submission?]
--  [How long can it be?]
--  [What's the deal with including an Appendix?  Do I include it as supplemental?]
--  [What is the format for the camera-ready copy?]
--  [How do I ensure that my file is correctly formatted?]
--  [What if my paper includes graphics?]
--  [What about copyright?]
--  [What if my paper's title or author list has changed?]
--  [My question isn't answered here...?]
+-  [When and where do I send my final camera-ready paper?](#when-and-where-do-i-send-my-final-camera-ready-paper)
+-  [What common mistakes do people make? What should I pay special attention to?](#what-common-mistakes-do-people-make-what-should-i-pay-attention-to)
+-  [How should the final copy differ from the original submission?](#how-should-the-final-copy-differ-from-the-original-submission)
+-  [How long can it be?](#how-long-can-it-be)
+-  [What's the deal with including an Appendix?  Do I include it as supplemental?](#whats-the-deal-with-including-an-appendix-do-i-include-it-as-supplemental)
+-  [What is the format for the camera-ready copy?](#what-is-the-format-for-the-camera-ready-copy)
+-  [How do I ensure that my file is correctly formatted?](#how-do-i-ensure-that-my-file-is-correctly-formatted)
+-  [What if my paper includes graphics?](#what-if-my-paper-includes-graphics)
+-  [What about copyright?](#what-about-copyright)
+-  [What if my paper's title or author list has changed?](#what-if-my-papers-title-or-author-list-has-changed)
+-  [My question isn't answered here...?](#my-question-isnt-answered-here)
 
 # What common mistakes do people make? What should I pay special attention to?
 
