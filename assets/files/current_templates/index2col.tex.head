@@ -1,0 +1,32 @@
+\documentclass[11pt,twocolumn]{article}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} % fonts to encode unicode
+\usepackage{times}
+
+\special{papersize=21cm, 29.7cm}
+\pdfpageheight\paperheight
+\pdfpagewidth\paperwidth
+\setlength\topmargin{-5mm} \setlength\oddsidemargin{-0cm}
+\setlength\textheight{24.7cm} \setlength\textwidth{16cm}
+\setlength\columnsep{0.6cm}  \newlength\titlebox \setlength\titlebox{2.00in}
+\setlength\headheight{5pt}   \setlength\headsep{0pt}
+\setlength\footskip{1.9cm}
+\setlength\leftmargin{0.0in}
+\pagestyle{plain}
+
+
+\begin{document}
+
+%\setcounter{page}{175}
+
+\begin{figure*}[htb]
+  \begin{center}
+    {\Large \bf Author Index}
+  \end{center}
+\end{figure*}
+
+THIS IS A BLANK PAGE
+\newpage
+PLEASE IGNORE
+\newpage
+
