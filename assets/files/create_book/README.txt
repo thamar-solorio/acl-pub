@@ -1,5 +1,5 @@
 ######
-## Mmitchell 27.April.2017
+## MMitchell 27.April.2017
 ######
 
 ## Run ./run_all.sh to run everything.  
