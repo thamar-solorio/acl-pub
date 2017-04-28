@@ -6,7 +6,7 @@ Simply click them, e.g., [001.overview.md](https://github.com/acl-org/acl-pub/bl
 
 [*002.book.md* Will give you the START compilation instructions](https://github.com/acl-org/acl-pub/blob/gh-pages/002.book.md), which is done [through the softconf website](https://www.softconf.com/acl2017/).  If your workshop abbreviation is "HEY2017", for example, your START publication headquarters are at https://www.softconf.com/acl2017/HEY2017/pub/, where you will be using this guide.
 
-Book authors may also find the [Camera-Ready-FAQ](camera-ready-faq.md) handy
+Authors may also find the [Camera-Ready-FAQ](camera-ready-faq.md) handy.
 
 Notes
 -----
