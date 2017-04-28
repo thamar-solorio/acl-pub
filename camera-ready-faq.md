@@ -4,6 +4,7 @@ title: ACL 2017 instructions for camera-ready paper submissions
 ---
 
 -  [When and where do I send my final camera-ready paper?](#when-and-where-do-i-send-my-final-camera-ready-paper)
+-  [I'm having a font/unicode issue.](#i-m-having-a-font-unicode-issue)
 -  [What common mistakes do people make? What should I pay special attention to?](#what-common-mistakes-do-people-make-what-should-i-pay-special-attention-to)
 -  [How should the final copy differ from the original submission?](#how-should-the-final-copy-differ-from-the-original-submission)
 -  [How long can it be?](#how-long-can-it-be)
@@ -30,6 +31,28 @@ title: ACL 2017 instructions for camera-ready paper submissions
      Google Scholar, etc).
 
      ![Picture of Softconf user info fields](assets/images/userinfo.png)
+     
+# I'm having a font/unicode issue.
+
+    The following warnings may appear when processing papers by authors from Japan:
+
+    <font face="Courier New, Courier, monospace">Error: Unknown character collection 'Adobe-Japan1'
+    Error: Couldn't find a font to substitute for 'Ryumin-Light-Identity-H' ('Adobe-Japan1' character collection)
+    Error: Couldn't find a font to substitute for 'GothicBBB-Medium-Identity-H' ('Adobe-Japan1' character collection)</font>
+
+    Also, the following warnings may appear when processing papers by authors from China:
+
+    <font face="Courier New, Courier, monospace">Error: Unknown character collection 'Adobe-GB1'
+    Error: Couldn't find 'GBK-EUC-H' CMap file for 'Adobe-GB1' collection
+    Error: Unknown CMap 'GBK-EUC-H' for character collection 'Adobe-GB1'
+    Error: Unknown font tag 'F1'</font>
+    
+    Make sure that fonts are embedded in the pdf.
+    Make sure that the author started their LaTeX file with
+
+    > <pre>\documentclass[11pt]{article}
+    > \usepackage{times}</pre>
+
 
 #  When and where do I send my final camera-ready paper?
 
