@@ -16,8 +16,6 @@ tl;dr:
 
 ### Who Should Read This Document
 
-This guide to the `aclpub` software will help you create a single proceedings volume for an ACL-affiliated conference. Presumably, you are one of the following:
-
 *   the program chair of a workshop
 *   the program chair of the short paper, poster, and/or demo session
 *   the publications chair of the overall conference (who traditionally assembles the main proceedings)
@@ -28,6 +26,7 @@ In short, you are a "book chair." This document will assume that you are specifi
 
 ### Overview
 
+This guide will help you create a single proceedings volume for an ACL-affiliated conference, using the `aclpub` software.
 
 We have tried to automate the process as much as possible. However, it still requires manual input. You should allocate 2-3 hours for this process. **The final look of your proceedings is your responsibility!**
 
