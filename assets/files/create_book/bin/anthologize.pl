@@ -1,5 +1,6 @@
 #!/usr/bin/perl
-
+# Last Updated 27.April.2017 by mmitchell
+#
 # Usage: anthologize.pl cdrom anthology
 #
 #    where cdrom is the directory containing the entire CD-ROM and
@@ -16,13 +17,13 @@
 # bib file at the top level of the CD-ROM.
 
 ##### 
-# Getting Text::BibTeX (see http://search.cpan.org/~gward/Text-BibTeX-0.34):
+#print STDOUT "Getting Text::BibTeX (see http://search.cpan.org/~gward/Text-BibTeX-0.34)"
 #   wget http://search.cpan.org/CPAN/authors/id/G/GW/GWARD/Text-BibTeX-0.34.tar.gz
 #   tar xvf Text-BibTeX-0.34
 #   cd Text-BibTeX-0.34
 #   perl Makefile.PL
 #   make
-#   sudo make install
+#   make install
 
 use strict 'vars';
 

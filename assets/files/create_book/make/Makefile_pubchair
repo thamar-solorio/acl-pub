@@ -1,6 +1,7 @@
 # Makefile for publications chair.
 # After getting contributions from the book chairs, assemble
 # all contributions from all books.
+# Updated 27.April.2017 by mmitchell
 
 ####################
 # "make all" will pretty much build everything all at once.   
