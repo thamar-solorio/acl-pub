@@ -4,6 +4,7 @@ title: ACL 2017 instructions for camera-ready paper submissions
 ---
 
 -  [When and where do I send my final camera-ready paper?](#when-and-where-do-i-send-my-final-camera-ready-paper)
+-  [I'm having a font/unicode issue.](#im-having-a-fontunicode-issue)
 -  [What common mistakes do people make? What should I pay special attention to?](#what-common-mistakes-do-people-make-what-should-i-pay-special-attention-to)
 -  [How should the final copy differ from the original submission?](#how-should-the-final-copy-differ-from-the-original-submission)
 -  [How long can it be?](#how-long-can-it-be)
