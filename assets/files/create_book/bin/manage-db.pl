@@ -3,10 +3,6 @@
 # Database Management Script for Generating Proceedings
 # written by Philipp Koehn
 
-use Text::PDF::File;
-use Text::PDF::SFont;
-use Text::PDF::Utils;
-
 my $pagecount = 1;
 my $___JUST_COPYRIGHT = 0;
 
@@ -458,20 +454,27 @@ sub create_cd {
         print STDERR "  author(s): $pdf_authors\n";
         print STDERR "  subject (venue): $pdf_subject\n\n";
         print TEX "\\setcounter{page}{$pagecount}\n";
-        &include('cd',$DB{$id}{"F"}[0],
-                 $DB{$id}{"L"}[0],
-                 $DB{$id}{"P"}[0],
-                 $DB{$id}{"T"}[0],
-                 $DB{$id}{"M"}[0],
-                 @{$DB{$id}{"A"}});
+
+	my $length = $DB{$id}{"L"}[0];
+	my $file = $DB{$id}{"F"}[0];
+	print TEX "\\citeinfo{$pagecount}{".($pagecount+$length-1)."}\n";
+        print TEX "~\\newpage\n";	# create page with citation stamp
+        print TEX "\\ClearShipoutPicture\n";
+	for $i (2..$length) {
+	    print TEX "~\\newpage";	# create pages with nothing but page number
+	}
+
+        $pagecount += $length;
+
         print TEX "\\end{document}\n";
         close(TEX);
         close(TEXTEMPLATE);
         system("pdflatex --interaction batchmode cd.tex")==0 || die "pdflatex failed on cd.tex; see cd.log for details\n";
         $papnum++;
         my $papnum_formatted = sprintf("%0${digits}d",$papnum);
-        # cd.txt is the paper.
-        system("mv cd.pdf cdrom/pdf/$abbrev$papnum_formatted.pdf")==0 || die;
+        # cd.pdf contains blank pages with the page numbers and the citation stamp.
+
+        system("$ENV{ACLPUB}/bin/pdfunderneath.py $file cd.pdf -o cdrom/pdf/$abbrev$papnum_formatted.pdf")==0 || die;
 
         # Copy additional files (other than paper) into a directory called "additional"
         # Rename the files to conform to the paper numbering/codes for the pdfs and bib files.
