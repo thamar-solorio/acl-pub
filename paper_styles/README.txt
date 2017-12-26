@@ -21,6 +21,8 @@ Updates and other Discrepancies/Notes listed below:
 - Added DOI instructions, formatting.
 - Added hyperlinks and DOI links, instructions to preserving when exporting to PDF.
 - Decided that there would no longer be the exception the Appendices appear below References "unless they contain references"; let's just say they always appear below References.
+- Updated MS Word Template so that an empty page is no longer added or deleted when adding or deleting content on first page (Ref: Issue #4).
+- Updated MS Word positioning of line numbers and items on the first page to be more closely aligned with latex format. 
 
 === Notes about Latex PDF ===
 - Abstract text should be in 10pt.  Looks like it might be 11pt in Latex; maybe check.
