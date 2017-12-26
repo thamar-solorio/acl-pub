@@ -22,6 +22,7 @@ Updates and other Discrepancies/Notes listed below:
 - Added hyperlinks and DOI links, instructions to preserving when exporting to PDF.
 - Decided that there would no longer be the exception the Appendices appear below References "unless they contain references"; let's just say they always appear below References.
 - Updated MS Word Template so that an empty page is no longer added or deleted when adding or deleting content on first page (Ref: Issue #4).
+- Updated Ruler in MS Word so that it is no longer a large table, but instead two small tables flushed with the sides of the page to avoid accidently selecting the ruler when trying to select the text.
 - Updated MS Word positioning of line numbers and items on the first page to be more closely aligned with latex format. 
 
 === Notes about Latex PDF ===
