@@ -10,7 +10,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% BibTeX style file acl_natbib_nourl.bst
+% BibTeX style file acl_natbib.bst
 %
 % intended as input to urlbst script
 %
