@@ -89,13 +89,13 @@ title: ACL 2017 instructions for camera-ready paper submissions
 
    <a name="format-size"></a>
    -  **Checking the paper size**. Your paper needs to be formatted to
-      US Letter-sized (8.5 inches wide and 11 inches tall). Here are a
+      A4. Here are a
       couple of ways to check this: 
       <ul> 
       <li>    
       Using pdfinfo. The `pdfinfo` command should include
 
-            Page size:      612 x 792 pts (letter)
+            Page size:      595.276 x 841.89 pts
 
         in its output.
       </li>
@@ -103,13 +103,11 @@ title: ACL 2017 instructions for camera-ready paper submissions
       Using Apple's Preview.app. Open the PDF, and type &#8984-I. It should report the
         correct page size. 
         
-        ![](assets/images/apple-preview.png).
       </li>
       <li>
       Using Adobe Acrobat. Open the PDF, navigate to File, Properties..., Description. The
-        field labeled "Page Size" should read 8.50 x 11.00 in.
+        field labeled "Page Size" should read 8.27 × 11.69 inches in.
 
-      ![](assets/images/acrobat.png)
       </li>
       </ul>
 
