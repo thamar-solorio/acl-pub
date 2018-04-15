@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ACL 2017 instructions for camera-ready paper submissions
+title: NAACL 2018 instructions for camera-ready paper submissions
 ---
 
 -  [When and where do I send my final camera-ready paper?](#when-and-where-do-i-send-my-final-camera-ready-paper)
@@ -198,5 +198,5 @@ title: ACL 2017 instructions for camera-ready paper submissions
 #  My question isn't answered here...?
 
    Please email the publications chairs at
-   [acl-pub-chairs@googlegroups.com](mailto:acl-pub-chairs@googlegroups.com).
+   [NAACL 2018 Publications Co-Chairs](mailto:naacl2018-publications@googlegroups.com).
    We will update this page if new issues arise.
