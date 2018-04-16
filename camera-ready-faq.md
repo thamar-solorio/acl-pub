@@ -57,12 +57,14 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 
    For both long and short papers, we allow one extra page to help
    address reviewer comments.  So long papers are permitted at most 9
-   pages of text plus additional pages containing Acknowledgements, References, and Appendix.
-   Short papers get 5 pages of text.
+   pages of text plus additional pages containing References, and Appendix.
+   Short papers get 5 pages of text. Acknowledgements are included in the 9 
+   (long)/5 (short) pages of content.
    
 # What's the deal with including an Appendix? Do I include it as supplemental?
 
-   You can include an Appendix, but the paper writing must be self-contained before the Acknowledgements.  Attach it as supplemental.
+   You can include an Appendix, but the paper writing must be self-contained before 
+   the Acknowledgements. The Appendix should appear in main document, after the references. 
 
 #  What is the format for the camera-ready copy?
 
