@@ -66,8 +66,8 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 
 #  What is the format for the camera-ready copy?
 
-   The file must be in Portable Document Format (PDF) on US Letter
-   paper (8.5 x 11 inches).  We strongly recommend the use of ACL
+   The file must be in Portable Document Format (PDF) on A4
+   paper (210 × 297 millimeters).  We strongly recommend the use of ACL
    LaTeX style files (or Microsoft Word Style files) tailored for this
    year's conference. You can view the style files and detailed
    formatting instructions on the web
@@ -83,7 +83,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 
 #  How do I ensure that my file is correctly formatted?
 
-   - [Make sure the paper is US Letter-sized](#format-size)
+   - [Make sure the paper is A4](#format-size)
    - [Adjust the margin offsets when uploading](#format-margins)
    - [Embed custom fonts](#format-fonts)
 
@@ -151,7 +151,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    EPS), which allow the graphics to scale arbitrarily. Avoid GIF or
    JPEG images that are low resolution or highly compressed.
 
-   Your paper must look good both when printed (8.5" x 11" size,
+   Your paper must look good both when printed (210 × 297 millimeters size,
    black-and-white) and when viewed onscreen as PDF (zoomable to any
    size, color okay).  Thus, you may want to use color high-resolution
    graphics, allowing onscreen readers to zoom in on a graph and study
