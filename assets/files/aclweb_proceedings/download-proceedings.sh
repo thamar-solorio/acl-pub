@@ -1,19 +1,18 @@
 #!/bin/bash
 
 conference=$1
-workshops=$2
+acronyms_list=$2
 
-for name in $(cat ${workshops}); do
-  x=$(echo $name | cut -d\| -f1)
-  url=$(echo $name | cut -d\| -f2)
-  if test $x = $url; then
-    url="https://www.softconf.com/${conference}/$x/pub/aclpub/proceedings.tgz"
-  fi
-  echo $x $url
-  [[ ! -d "data/$x" ]] && mkdir -p data/$x
-  cd data/$x
+# line = ${acronym} ${volume_id} ${volume_no}
+while read line; do
+  acronym=$(echo $line | awk -F' ' '{print $1}') # parse only the first item per line
+  url="https://www.softconf.com/${conference}/$acronym/pub/aclpub/proceedings.tgz"
+  echo $acronym $url
+  [[ ! -d "data/$acronym" ]] && mkdir -p data/$acronym
+  cd data/$acronym
   wget -N --no-check-certificate $url
-  lastfile=$(ls -r1 *.tgz | tail -n1)
-  tar --exclude '*.pdf' --exclude '*gz' --exclude '*zip' -xzvf $lastfile proceedings/order proceedings/final 
+  echo $lastfile
+  echo $(pwd)
+  tar -zxf proceedings.tgz;
   cd -
-done
+done <${acronyms_list}

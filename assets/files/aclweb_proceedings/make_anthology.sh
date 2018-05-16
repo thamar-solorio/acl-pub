@@ -1,22 +1,34 @@
-# anthologize.pl <outdir> <cdrom> <proceedings name> <volume id> <volume no>
-perl bin/anthologize.pl anthology N/N16/naacl-hlt2016 N16-1 N16 1
-perl bin/anthologize.pl anthology N/N16/srw N16-2 N16 2
-perl bin/anthologize.pl anthology N/N16/demos N16-3 N16 3
-perl bin/anthologize.pl anthology N/N16/tutorials N16-4  N16 4
+# Input: acronyms_list.txt
+#  Each line msut be in this format: ${acronym} ${volume_id} ${volume_no}
+#  Each well-formed line calls: anthologize.pl <cdrom> <outdir> <volume id> <volume no>
+#
+# <cdrom>: e.g., "data/naacl-hlt2018-longpapers/proceedings" This is the folder containing the unzipped contents of "proceedings.tar.gz"
+#
+# <outdir>: "anthology". The script will output data to this directory
+#
+# <volume id>: e.g., "N18". N=NAACL proceedings, W=Workshops, S=Semeval etc. + the year in 2 digits (to be used to match "http://www.aclweb.org/anthology/N/N18/", "http://www.aclweb.org/anthology/W/W18/", http://www.aclweb.org/anthology/S/S18/)
+#
+# <volume no>: e.g., "1". Number from the bibtex url. Typically, 1=long papers, 2=short papers, 3=industry, 4=srw, 5=demo, 6=tutorials. The workshops follow the final numbers of the bibtex url n, e.g., 05, 06, ...
 
-perl bin/anthologize.pl anthology S/SemEval/proceedings/cdrom SemEval S16 1
+acronyms_list=$1
 
-perl bin/anthologize.pl anthology W/HCQA HCQA W16 01
-perl bin/anthologize.pl anthology W/CLFL CLfL2016 W16 02
-perl bin/anthologize.pl anthology W/CLPsych CLPsych W16 03
-perl bin/anthologize.pl anthology W/WASSA WASSA2016 W16 04
-perl bin/anthologize.pl anthology W/BEA BEA11 W16 05
-perl bin/anthologize.pl anthology W/SedMT W16-06 W16 06
-perl bin/anthologize.pl anthology W/CORBON CORBON W16 07
-perl bin/anthologize.pl anthology W/CADD W16-08 W16 08
-perl bin/anthologize.pl anthology W/DiscoNLP DiscoNLP W16 09
-perl bin/anthologize.pl anthology W/EVENTS W16-10 W16 10
-perl bin/anthologize.pl anthology W/Meta4NLP MetaphorNLP W16 11
-perl bin/anthologize.pl anthology W/MLCL W16-12 W16 12
-perl bin/anthologize.pl anthology W/AKBC W16-13 W16 13
-perl bin/anthologize.pl anthology W/TextGraphs TextGraphs-10 W16 14
+while read line; do
+  # check that all three values exist
+  acronym=$(echo $line | awk -F' ' '{print $1}') 
+  if [ "$acronym" == '' ]; then
+    echo "Missing acronym"
+  else
+    volume_id=$(echo $line | awk -F' ' '{print $2}') 
+    if [ "$volume_id" == '' ]; then
+      "Missing volume id for $acronym"
+    else
+      volume_no=$(echo $line | awk -F' ' '{print $3}')
+      if [ "$volume_no" == '' ]; then
+        echo "Missing volume id for $acronym"
+      else
+	# if exactly 3 arguments, process this entry
+        perl ./../create_book/bin/anthologize.pl data/${acronym}/proceedings anthology ${volume_id} ${volume_no}
+      fi
+    fi
+  fi
+done <${acronyms_list}
