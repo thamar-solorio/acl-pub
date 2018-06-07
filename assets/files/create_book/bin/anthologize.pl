@@ -165,6 +165,20 @@ for my $dir (glob("$cdrom/*")) {
     symlink(File::Spec->abs2rel($bib,$anthdir), "$anth.bib");
     symlink(File::Spec->abs2rel($pdf,$anthdir), "$anth.pdf");
 
+    # Link the additional files (i.e. supplemental) that are in .pdf format, and rename them as ".Notes"
+    my $additional_pdf = join("","$dir/additional/$volume_id-$paper_id","_OptionalAttachment.pdf");
+    if (-e $additional_pdf) {
+      symlink(File::Spec->abs2rel($additional_pdf,$anthdir), join("", $anth, ".Notes.pdf"));
+    }
+
+    # Link the additional files (i.e. supplemental) that are in .pdf format, and rename them as ".Additional"
+    my @additional_other = glob(join("","$dir/additional/$volume_id-$paper_id","_OptionalAttachment.*"));
+    if (-e @additional_other){# and ! $additional_other[0] eq $additional_pdf) {
+      print $additional_other[0];
+      #symlink(File::Spec->abs2rel($additional_pdf,$anthdir), join("", $anth, ".Attachment.$extension"));
+    }
+
+ 
     ##############################################################################
 
     # Convert the current .bib file into XML.
