@@ -77,8 +77,10 @@ left to do it for their own workshops, demos, etc, but we will verify all of the
 
 ### After Workshop Camera Ready
 * Ensure all Book Chairs have followed [002.book.md](002.book.md)
-* Flip through their proceedings and make sure they have caught the paper formatting issues. If not, ask the organizers to email the paper authors ASAP.
-* In the past, it's best to split this effort between pub-chairs and verify the others' work :) 
+  * Flip through their proceedings and make sure they have caught the paper formatting issues. If not, ask the organizers to email the paper authors ASAP.
+  * In the past, it's best to split this effort between pub-chairs and verify the others' work :) 
+* Work with the General Chair and Program Chairs to fill out their welcome messages in the front matter.
+* Work with the Handbook Chair if they need changes to the proceedings order files
 
 ### Compiling the Proceedings
 
