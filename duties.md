@@ -87,6 +87,10 @@ left to do it for their own workshops, demos, etc, but we will verify all of the
 This phase begins after you have verified the main proceedings and all the other books in your conference: 
 * [Build the ACL Web Anthology](full-aclweb-proceedings-howto.md), the results of which are posted on the [ACL Anthology](https://aclanthology.coli.uni-saarland.de/). 
 
+### After the Conference
+
+* Update these readmes with what you've learned, so we can make this process more efficient next year!
+* If authors ask to make a correction after their paper has been posted on the Anthology, they will have to invoke the revision process [http://aclanthology.info/corrections](http://aclanthology.info/corrections).
 
 ## Gotchas
 A list of some outstanding issues: 
