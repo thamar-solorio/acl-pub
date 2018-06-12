@@ -9,12 +9,14 @@ For authors:
 * [Camera-Ready-FAQ](camera-ready-faq.md)
 
 **For conference publication chairs only**:
+* [*duties.md* Provides a running list of the responsibilities of publication chairs](duties.md), with estimated timelines, and guidance and tips for making the process easier for future chairs.
 * [*full-aclweb-proceedings-howto.md* Will give you the aclweb generation instructions for compiling the main conference, workshops, demos, tutorials for the ACL anthology](full-aclweb-proceedings-howto.md), which is done on your local machine (verified to work on Ubuntu as of 15 May 2018).
 
 
 
 Notes
 -----
+SL:2018.11.May: Updating duties.md, and proceedings-howto.md
 
 SL:2018.15.May: Updating download-proceedings.sh, make_anthology.sh, anthology.pl, and full-aclweb-proceedings-howto.md. Renaming and modifying format of workshop.txt to acronyms_list.txt
 
