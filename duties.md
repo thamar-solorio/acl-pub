@@ -15,6 +15,7 @@ The final goal is to produce beautiful proceedings to be hosted on the [ACL Anth
 * Pricilla Rasmussen, Local Arrangements Chair. Gives us the ISBN numbers
 * Min-Yen Kan, ACL Anthology editor. Give us the bibtex urls and support for uploading to the anthology
 * Handbook Chair: their duties typically start just after the camera-ready time, and are primarily concerned with `order` files. You'll need to make sure that any changes the handbook chair requests are also reflected in the pdf proceedings. 
+* START/SoftConf support (support@softconf.com). Email them with any START-related issues. They are usually very quick to respond!
 
 ## Some duties and timeline of pub chairs
 
