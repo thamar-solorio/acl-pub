@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Publication Chair Duties and Timeline
-updated: 06 june 2018 by slukin
+updated: 31 july 2018 by slukin
 ---
 
 A running list of Pub-Chair duties and a rough timeline. 
@@ -21,12 +21,14 @@ The final goal is to produce beautiful proceedings to be hosted on the [ACL Anth
 
 There are several critcal times for pub-chairs.
 
-### Early stages
+### Early stages, prior to CFP
+
 * Update latex and word templates. Make sure that NAACL and ACL are using the same template 
 * Create an overleaf template
   * Click 'Journals/Services' > 'Submit to Overleaf Gallery'
 
 ### Once workshops are determined
+
 * Create a mailing list for book chairs for easier communication in later stages. Include: 
   * conference pub-chair alias 
   * all of the workshop chairs aliases
@@ -47,37 +49,47 @@ There are several critcal times for pub-chairs.
   * Optional columns for indicating if the proceedings have been finalized
 
 ### Around Submission Deadline
-* Authors may email pub-chairs about formatting issues (especially with people using the Word template) or extensions (extensions are not handled by us-- direct them to the PCs). 
 
-### Around Author Notifications Time / Prior to Camera Ready Deadline 
-* Optionally update the [Camera Ready FAQ](camera-ready-faq.md). Important things we will look for will be: 
-  * Author name formatting is taking from their START account information
-  * The paper follows the style file!
-  * Figures are readable in B&W
-* Ask the PCs to point authors to the [Camera Ready FAQ](camera-ready-faq.md) guide (either in the email notification or on a blog)
-* Send an email 1.5-2 months before camera ready to the Book Chairs pointing them to the following, in order to prepare for what's next
+* Authors may email pub-chairs about formatting issues (especially with people using the Word template) or extensions (extensions are not handled by us-- direct them to the PCs). 
+* Send an email around this time, and 1.5-2 months before camera ready to the Book Chairs pointing them to the following, in order to prepare for what's next
   * [001.overview.md](001.overview.md)
   * [002.book.md](002.book.md)
   * [Camera Ready FAQ](camera-ready-faq.md) for them to send to the authors
+* Instruct book chairs to make a first attempt at an order file in START. This experience will be helpful later on.
+
+### Around Author Notifications Time & Prior to Camera Ready Deadline
+
+* Optionally update the [Camera Ready FAQ](camera-ready-faq.md). 
+* Ask the PCs to point authors to the [Camera Ready FAQ](camera-ready-faq.md) guide (either in the email notification or on a blog)
 * Make sure Rich (SoftConf) initializes the camera-ready interface from the NAACL main one. This includes making sure that the `OptionalAttachment` field is present. 
 
-### After Camera Ready Deadline
-We do these for main conference proceedings. The other Book Chairs are
-left to do it for their own workshops, demos, etc, but we will verify all of their as well
+### After Author Notification
 
-* Follow [002.book.md](002.book.md) for long and short papers, especially
-  * Validate and correct paper metadata
+We do these for main conference proceedings. The other Book Chairs are
+left to do it for their own workshops, demos, etc, but we verify all of theirs as well
+* Begin to complete the START proceedings for long and short papers following [002.book.md](002.book.md). This includes:
+  * CDROM tab (with bibtex url)
+  * Citation stamp
+  * ISBN
+  * Order files
+* Notify Book chairs that they should be doing the same
+
+### After Camera Ready Deadline
+
+* Manually inspect the camera ready long and short papers, and continue to follow [002.book.md](002.book.md). Important things we look for are: 
+  * Make sure the papers have followed the style guidelines
   * Make sure the papers fit within the proceedings margins
   * Make sure figures don't depend on color to convey information
-  * Make sure the list of paper authors (this is only for the most
-    thorough pub chairs!)
-  * Make sure all copyright and video release forms have been signed and
-  entered
+
+* Once the final papers are submitted, Pub Chairs additionally must
+  * Validate and correct paper metadata,  e.g., author name formatting is takien from their START account information
+  * Make sure all copyright and video release forms have been signed and entered
+  * Make sure the list of paper authors (this is only for the most thorough pub chairs!) 
 * If you find errors, you must email the authors. With the PC's and Handbook chair, determine an appropriate window to allow for revisions (~2 weeks. Making sure you have a hard cut off date will make your life easier! Make sure the START portal is officially closed after this deadline). 
 
+* Pub Chais must finalize the main conference proceedings from [002.book.md](002.book.md).
 
-### After Workshop Camera Ready
-* Ensure all Book Chairs have followed [002.book.md](002.book.md)
+* Ensure all Book Chairs have followed [002.book.md](002.book.md) as well, including the tasks listed above for pub chairs.
   * Flip through their proceedings and make sure they have caught the paper formatting issues. If not, ask the organizers to email the paper authors ASAP.
   * In the past, it's best to split this effort between pub-chairs and verify the others' work :) 
 * Work with the General Chair and Program Chairs to fill out their welcome messages in the front matter.
@@ -91,7 +103,7 @@ This phase begins after you have verified the main proceedings and all the other
 ### After the Conference
 
 * Update these readmes with what you've learned, so we can make this process more efficient next year!
-* If authors ask to make a correction after their paper has been posted on the Anthology, they will have to invoke the revision process [http://aclanthology.info/corrections](http://aclanthology.info/corrections).
+* If authors ask to make a correction after their paper has been posted on the Anthology, they will have to invoke the revision process [http://aclanthology.info/corrections](http://aclanthology.info/corrections). This may require you to regenerate the full proceedings pdf. 
 
 ## Gotchas
 A list of some outstanding issues: 
