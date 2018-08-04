@@ -1,8 +1,12 @@
+The latex/ and word/ directories should contain only the current years' submission. Older templates will be migrated to the archive/ directory. 
+
+ACL and NAACL templates are now maintained in the same git repository, and will both make use of the same .sty, .bib, and .bst files. 
+
+====
+
 As of Feb. 12th, 2017, the “Notes about Latex PDF” updates still need to be done on the acl2017.tex document.
 
 From:  M Mitchell <margarmitchell@gmail.com>
-
-====
 
 Hyperlinked assuming it will appear in http://acl2017.org/downloads/acl17- word.zip. 
 
