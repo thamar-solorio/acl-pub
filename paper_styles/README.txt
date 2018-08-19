@@ -1,6 +1,6 @@
 The latex/ and word/ directories should contain only the current years' submission. Older templates will be migrated to the archive/ directory. 
 
-ACL and NAACL templates are now maintained in the same git repository, and will both make use of the same .sty, .bib, and .bst files. 
+ACL and NAACL templates are now maintained in the same git repository, and will both make use of the same .sty, .bib, and .bst files, though the .sty and .bib files might be renamed to acl20xx and naaclhlt20xx appropriately each year. Also, be sure to change the "Anonymous Submission" and "Paper ID" labels in the .sty file for ACL and NAACL. 
 
 ====
 
