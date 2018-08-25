@@ -16,7 +16,7 @@
 # Perhaps the tarball name should have the same base name as the
 # bib file at the top level of the CD-ROM.
 
-##### 
+#####
 #print STDOUT "Getting Text::BibTeX (see http://search.cpan.org/~gward/Text-BibTeX-0.34)"
 #   wget http://search.cpan.org/CPAN/authors/id/G/GW/GWARD/Text-BibTeX-0.34.tar.gz
 #   tar xvf Text-BibTeX-0.34
@@ -29,6 +29,8 @@ use strict 'vars';
 
 use File::Spec;
 use Text::BibTeX;
+use TeX::Encode;	# for latex accents to utf8
+use Encode;
 
 my ($cdrom,$anthology,$volume_id,$volume_no,) = @ARGV;
 my $tempfile = "/tmp/anthologize.$$";
@@ -64,7 +66,7 @@ for my $dir (glob("$cdrom/*")) {
 
     # grab the corresponding pdf file in the pdf/ directory
     my $pdf = $bib;
-    $pdf =~ s{/bib/([^/]*)\.bib$}{/pdf/$1.pdf};     
+    $pdf =~ s{/bib/([^/]*)\.bib$}{/pdf/$1.pdf};
 
     # Parse the bib entry.
     open(BIB,$bib) || die;
@@ -88,12 +90,12 @@ for my $dir (glob("$cdrom/*")) {
       # this will become anthology/N/N18/N18-1000
       $paper_id = $volume_no;
     }
- 
+
     my $anth_top = "$anthdir/$volume_id"; # for xml naming
     my $anth = "$anthdir/$volume_id-$paper_id";
     my $anthfile = "$volume_id-$volume_no";
 
-    next $bib if $paper_id eq "";
+    next if $paper_id eq "";
 
     if (!defined $urlprefix) {
 
@@ -178,7 +180,7 @@ for my $dir (glob("$cdrom/*")) {
       #symlink(File::Spec->abs2rel($additional_pdf,$anthdir), join("", $anth, ".Attachment.$extension"));
     }
 
- 
+
     ##############################################################################
 
     # Convert the current .bib file into XML.
@@ -189,25 +191,11 @@ for my $dir (glob("$cdrom/*")) {
     for my $field ('title', 'author', 'editor', $bibentry->fieldlist) {   # force order
       next unless $bibentry->exists($field);
       next if $alreadydone{$field}++;
-      my @values = ($field eq 'author' || $field eq 'editor') 
+      my @values = ($field eq 'author' || $field eq 'editor')
                	       ? map { &formatname($_) } $bibentry->names($field)
-		       : $bibentry->get($field);
+		       : &escape_xml(&latex2utf8($bibentry->get($field)));
       for my $val (@values) {
-	# pass $val through our db-to-html filter.
-	# There must be a nicer way to do this, but $htmlval = `echo "$val" | db-to-html.pl`
-        # doesn't work because the shell may clobber special chars in $val, such as ``.
-	open (TEMP, ">$tempfile") || die;
-	print TEMP $val;
-	close TEMP;
-
-
-	my $htmlval = `$ENV{ACLPUB}/bin/db-to-html.pl $tempfile`;
-	die unless defined $htmlval;  # check for command error
-	chomp($htmlval);
-	unlink TEMP;
-
-	# print the filtered val.
-	print XML "        <$field>$htmlval</$field>\n";
+	print XML "        <$field>$val</$field>\n";
       }
     }
     print XML "        <bibtype>".$bibentry->type."</bibtype>\n";
@@ -229,7 +217,7 @@ for my $dir (glob("$cdrom/*")) {
 
 ###############
 
-# We could use Text::BibTeX::NameFormat for this, i.e., 
+# We could use Text::BibTeX::NameFormat for this, i.e.,
 #     my $format = new Text::BibTeX::NameFormat ('fvlj',0);
 #     return $format->apply($name);
 # However, customizing that to put XML tags around the pieces is too annoying.
@@ -239,10 +227,78 @@ sub formatname {
   my $out = "";
   for my $part ('first','von','last','jr') {
     my @tokens = $name->part($part);
-    if (@tokens) {   # nonempty
+    if (@tokens && $tokens[0]) {   # nonempty
       unshift(@tokens,",") if $part eq 'jr';   # the jr part starts with a comma
-      $out .= "<$part>".join(" ",@tokens)."</$part>";
+      $out .= "<$part>".&escape_xml(&latex2utf8(join(" ",@tokens)))."</$part>";
     }
   }
   return $out;
 }
+
+sub latex2utf8 {
+ ($_) = @_;
+
+ s/\015//g;       # kill CR from DOS format files
+
+ s/\r//g;         # kill CR from DOS format files
+
+ # latex cruft
+ s/\\@//g;          # kill latex \@, sometimes used after periods
+ s/\\,//g;          # kill latex \, sometimes used to widen titles in TOC
+ s/\\\\|\\newline\b/\n/g;    # latex newlines
+ s/\\ / /g;         # latex hard space: convert to ordinary space
+ s/(?<!\\)~/ /g;    # latex hard space ~ unless preceded by backslash: convert to ordinary space
+ s/\\&/&/g;         # latex \&
+ s/(?<!\\)~/ /g;    # latex hard space ~ unless preceded by backslash: convert to ordinary space
+
+ # common latex glyphs
+ #s/---/—/g;   # em-dash
+ s/--/–/g;    # en-dash
+ s/(?<!\\)\`\`/“/g;  # smart quotes (also single apostrophe), unless preceded by backslash
+ s/(?<!\\)\'\'/”/g;
+ s/(?<!\\)\`/‘/g;
+ s/(?<!\\)\'/’/g;
+
+ # collapse whitespace
+ s/[ \t]+/ /g;
+ s/^ //;
+ s/ $//;
+
+ # diacritics
+ $_ = decode('latex', $_);	# use TeX::Encode;
+
+
+ # italicization (not too careful about nested {}).
+ # !!! could also try to fix math, e.g., "$n$-gram"
+ s/{\\em (.+)}/$1/;
+ s/\\textit\{(.+)}/$1/;
+ s/\\emph\{(.+)}/$1 /;
+
+ # boldface
+ s/{\\bf (.+)}/$1/;
+ s/\\textbf\{(.+)}/$1/;
+
+ # small caps - just print normally
+ s/\\textsc\{(.+)}/$1/;
+
+
+ # Any remaining backslashed sequences get deleted with a WARNING
+ warn "Don't know how to translate $& to UTF; deleting it" while s/\\[A-Za-z]+//;
+
+ # eliminate any remaining curly braces (usually used to protect capitalization in bibtex).
+ # Unless preceded by backslash.
+ s/(?<!\\)[{}]//g;
+
+ return $_;
+}
+
+sub escape_xml {
+    my($text) = @_;
+    $text =~ s/&/&amp;/go;
+    $text =~ s/</&lt;/go;
+    $text =~ s/>/&gt;/go;
+    $text =~ s/'/&apos;/go;
+    $text =~ s/"/&quot;/go;
+    return $text;
+}
+
