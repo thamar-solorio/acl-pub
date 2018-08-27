@@ -217,6 +217,10 @@ for my $dir (glob("$cdrom/*")) {
 
 ###############
 
+# produce name in format <first>Ludwig</first><last>van Beethoven</last>
+# bibtex has fields for fist, von, last, and jr
+# but anthology database only has fields for first and last.
+
 # We could use Text::BibTeX::NameFormat for this, i.e.,
 #     my $format = new Text::BibTeX::NameFormat ('fvlj',0);
 #     return $format->apply($name);
@@ -224,14 +228,22 @@ for my $dir (glob("$cdrom/*")) {
 
 sub formatname {
   my($name) = @_;
-  my $out = "";
-  for my $part ('first','von','last','jr') {
-    my @tokens = $name->part($part);
-    if (@tokens && $tokens[0]) {   # nonempty
-      unshift(@tokens,",") if $part eq 'jr';   # the jr part starts with a comma
-      $out .= "<$part>".&escape_xml(&latex2utf8(join(" ",@tokens)))."</$part>";
-    }
+  my @tokens = $name->part('first');
+  my $out = "<first>".&escape_xml(&latex2utf8(join(" ",@tokens)))."</first>";
+  $out .= "<last>";
+  @tokens = $name->part('von');
+  if (@tokens && $tokens[0]) {   # nonempty
+      $out .= &escape_xml(&latex2utf8(join(" ",@tokens)));
+      $out .= ' ';
   }
+  @tokens = $name->part('last');
+  $out .= &escape_xml(&latex2utf8(join(" ",@tokens)));
+  @tokens = $name->part('jr');
+  if (@tokens && $tokens[0]) {   # nonempty
+      # comma before Jr
+      $out .= ", " . &escape_xml(&latex2utf8(join(" ",@tokens)));
+  }
+  $out .= "</last>";    
   return $out;
 }
 
