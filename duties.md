@@ -1,25 +1,42 @@
 ---
 layout: default
 title: Publication Chair Duties and Timeline
-updated: 31 july 2018 by slukin
+updated: 16 dec 2018 by slukin
+
 ---
 
-A running list of Pub-Chair duties and a rough timeline. 
-
-Document originally written by Matt Post in 2015, and updated by Stephanie Lukin after NAACL 2018. 
 
 ## What is my goal?
 The final goal is to produce beautiful proceedings to be hosted on the [ACL Anthology](https://aclanthology.coli.uni-saarland.de/)! 
 
 ## People pub-chairs regularly interface with: 
 * Pricilla Rasmussen, Local Arrangements Chair. Gives us the ISBN numbers
-* Min-Yen Kan, ACL Anthology editor. Give us the bibtex urls and support for uploading to the anthology
+* ACL Anthology editor, previously Min-Yen Kan. Give us the bibtex urls and support for uploading to the anthology
 * Handbook Chair: their duties typically start just after the camera-ready time, and are primarily concerned with `order` files. You'll need to make sure that any changes the handbook chair requests are also reflected in the pdf proceedings. 
 * START/SoftConf support (support@softconf.com). Email them with any START-related issues. They are usually very quick to respond!
 
 ## Some duties and timeline of pub chairs
 
-There are several critcal times for pub-chairs.
+There are several critcal times for pub-chairs. I will include the NAACL 2019 timeline as an example, with pub chair actionable items in **bold**.
+
+|Date  | Item |
+|---|---|
+ | **August 2018** | Update NAACL style templates for CFP |
+ | December 3 | Abstracts and keywords due |
+ | December 10 | Final paper submissions |
+ | **December 11** | Workshops are determined. Create a master spreadsheet (https://docs.google.com/spreadsheets/d/1hSlqWCcTHZw-vaUQz-CBULIWtO99e0mNI8QP9sDohT0/edit#gid=0) |
+ | **January 2019** | Email all book chairs with [001.overview.md](001.overview.md) and [002.book.md](002.book.md) instructions to prepare them |
+ | February 22 | Notification of acceptance (long, short, & industry track) |
+ | March 18 | Notification of acceptance (demos) |
+ | March 27 | Notification of acceptance (workshops) |
+ | **March 28** | Send email to all book chairs. Ask them to start to fill in softconf information including their web anthology, front matter, and schedule, now that the papers have been accepted |
+ | April 1 | Camera ready papers due (long, short, & industry track) |
+ | April 5 | Camera-ready papers due (workshops) |
+ | **April 10** | Pub chairs finish checking papers for formatting and have sent out author requests for corrections. Pub chairs are also working on the web anthology information for main papers, and checking over the work the Book chairs have done during this time. |
+ | **April 24** | Close camera ready submission (we need to make sure that authors know this date up front when the revisions begin, and that the start portals have all been closed at this time) |
+ | **May 5** | Pub chairs can try to wrap up everything and pass the torch to the handbook chair, who will pull from the web anthology information |
+ | **May 22** | Send proceedings to anthology editor, and have some time to make adjustments with editor if necessary. |
+ | June 2 - 7| NAACL conference |
 
 ### Early stages, prior to CFP
 
@@ -62,11 +79,11 @@ There are several critcal times for pub-chairs.
 * Optionally update the [Camera Ready FAQ](camera-ready-faq.md). 
 * Ask the PCs to point authors to the [Camera Ready FAQ](camera-ready-faq.md) guide (either in the email notification or on a blog)
 * Make sure Rich (SoftConf) initializes the camera-ready interface from the NAACL main one. This includes making sure that the `OptionalAttachment` field is present. 
+* Request access to all the softconf/START portals associated with the conference. We need access to all of them. 
 
 ### After Author Notification
 
-We do these for main conference proceedings. The other Book Chairs are
-left to do it for their own workshops, demos, etc, but we verify all of theirs as well
+We do these for main conference proceedings. The other Book Chairs are left to do it for their own workshops, demos, etc, but we verify all of theirs as well 
 * Begin to complete the START proceedings for long and short papers following [002.book.md](002.book.md). This includes:
   * CDROM tab (with bibtex url)
   * Citation stamp
@@ -110,3 +127,7 @@ A list of some outstanding issues:
 * DOI instructions
 * Hyperlinks not working after START compiles the targets
 * Short and long paper separation instructions need to be added to the repository
+
+## Authors
+The material included in it has evolved over many years through the work of a large number of volunteers, including past NAACL and ACL publications chairs, including Stephanie Lukin, Matt Post.
+
