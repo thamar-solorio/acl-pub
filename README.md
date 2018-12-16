@@ -16,6 +16,8 @@ For authors:
 
 Notes
 -----
+SL:2018.16.Dec: Updating 001.overview.md, 002.book.md, and duties.md
+
 SL:2018.11.May: Updating duties.md, and proceedings-howto.md
 
 SL:2018.15.May: Updating download-proceedings.sh, make_anthology.sh, anthology.pl, and full-aclweb-proceedings-howto.md. Renaming and modifying format of workshop.txt to acronyms_list.txt

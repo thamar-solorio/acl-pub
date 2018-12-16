@@ -25,11 +25,12 @@ There are several critcal times for pub-chairs. I will include the NAACL 2019 ti
  | December 3 | Abstracts and keywords due |
  | December 10 | Final paper submissions |
  | **December 11** | Workshops are determined. Create a master spreadsheet (https://docs.google.com/spreadsheets/d/1hSlqWCcTHZw-vaUQz-CBULIWtO99e0mNI8QP9sDohT0/edit#gid=0) |
- | **January 2019** | Email all book chairs with [001.overview.md](001.overview.md) and [002.book.md](002.book.md) instructions to prepare them |
+ | **January 2019** | Email all book chairs. Ask them to fill in their softconf abbreviation in the spreadsheet and confirm the title and email alias. Also send [001.overview.md](001.overview.md) and [002.book.md](002.book.md) instructions to prepare them |
  | February 22 | Notification of acceptance (long, short, & industry track) |
+ | **March 1** | Send email to all book chairs. Ask them to start to fill in softconf information in Step 4 and 6 following the [002.book.md](002.book.md) guide. |
  | March 18 | Notification of acceptance (demos) |
  | March 27 | Notification of acceptance (workshops) |
- | **March 28** | Send email to all book chairs. Ask them to start to fill in softconf information including their web anthology, front matter, and schedule, now that the papers have been accepted |
+ | **March 28** | Send email to all book chairs. Ask them to continue to fill in softconf information, following the remainder of the [002.book.md](002.book.md) guide |
  | April 1 | Camera ready papers due (long, short, & industry track) |
  | April 5 | Camera-ready papers due (workshops) |
  | **April 10** | Pub chairs finish checking papers for formatting and have sent out author requests for corrections. Pub chairs are also working on the web anthology information for main papers, and checking over the work the Book chairs have done during this time. |
