@@ -56,7 +56,7 @@ There are several critcal times for pub-chairs. I will include the NAACL 2019 ti
   * industry chairs alias (if applicable)
   * demo chairs alias
   * tuotrial chairs alias (though typically, the pub-chairs have done everything detailed in [002.book](002.book.md) for the tutorials)
-* Create a google doc or shared spreadsheet (e.g., [from NAACL 2018](https://docs.google.com/spreadsheets/d/1LBaP9ddI-5XGDvDvB0xSxgaLgz438P5MlGNVKtQZS8w/edit?usp=sharing)) and populate with the following for the main proceedings, workshops, SRW, demos, tutorials:
+* Create a google doc or shared spreadsheet (e.g., [from NAACL 2019](https://docs.google.com/spreadsheets/d/1hSlqWCcTHZw-vaUQz-CBULIWtO99e0mNI8QP9sDohT0/edit?usp=sharing), [from NAACL 2018](https://docs.google.com/spreadsheets/d/1LBaP9ddI-5XGDvDvB0xSxgaLgz438P5MlGNVKtQZS8w/edit?usp=sharing)) and populate with the following for the main proceedings, workshops, SRW, demos, tutorials:
   * SoftConf abbreviation
   * Title (this must be correct for getting the ISBN)
   * SIG: is this workshop to appear as a SIG on the anthology? the workshop organizers should know this
