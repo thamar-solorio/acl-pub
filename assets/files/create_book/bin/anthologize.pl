@@ -279,20 +279,21 @@ sub latex2utf8 {
  # diacritics
  $_ = decode('latex', $_);	# use TeX::Encode;
 
-
- # italicization (not too careful about nested {}).
- # !!! could also try to fix math, e.g., "$n$-gram"
- s/{\\em (.+)}/$1/;
- s/\\textit\{(.+)}/$1/;
- s/\\emph\{(.+)}/$1 /;
-
- # boldface
- s/{\\bf (.+)}/$1/;
- s/\\textbf\{(.+)}/$1/;
-
- # small caps - just print normally
- s/\\textsc\{(.+)}/$1/;
-
+ do {
+     $in = $_;		# process innermost tags until none left
+     # italicization
+     # !!! could also try to fix math, e.g., "$n$-gram"
+     s/{\\em ([^\{\}]+)}/$1/g;
+     s/\\textit\{([^\{\}]+)}/$1/g;
+     s/\\emph\{([^\{\}]+)}/$1/g;
+     
+     # boldface
+     s/{\\bf ([^\{\}]+)}/$1/g;
+     s/\\textbf\{([^\{\}]+)}/$1/g;
+     
+     # small caps - just print normally
+     s/\\textsc\{([^\{\}]+)}/$1/g;
+ } until ($in eq $_)
 
  # Any remaining backslashed sequences get deleted with a WARNING
  warn "Don't know how to translate $& to UTF; deleting it" while s/\\[A-Za-z]+//;
