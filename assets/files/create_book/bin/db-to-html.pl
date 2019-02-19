@@ -372,7 +372,7 @@ s/\$@\$/&#64;/g;    # AT
 
      # small caps - just print normally
      s/\\textsc\{([^\{\}]+)}/$1/;
-} until ($in eq $_)
+} until ($in eq $_);
 
 # Any remaining backslashed sequences get deleted with a WARNING
 warn "Don't know how to translate $& to HTML; deleting it" while s/\\[A-Za-z]+//;

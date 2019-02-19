@@ -244,11 +244,18 @@ sub formatname {
       $out .= ", " . &escape_xml(&latex2utf8(join(" ",@tokens)));
   }
   $out .= "</last>";    
+  if ($out eq lc($out)) {
+      # some authors have all lowercase names in their softconf profiles
+      # which triggers a bug in TeX::BibTeX name parsing
+      # https://github.com/ambs/Text-BibTeX/issues/29
+      warn "Lowercase name: $out\n Name may be duplicated/misparsed";
+  }
   return $out;
 }
 
 sub latex2utf8 {
  ($_) = @_;
+ my $in;
 
  s/\015//g;       # kill CR from DOS format files
 
@@ -264,7 +271,7 @@ sub latex2utf8 {
  s/(?<!\\)~/ /g;    # latex hard space ~ unless preceded by backslash: convert to ordinary space
 
  # common latex glyphs
- #s/---/—/g;   # em-dash
+ s/---/—/g;   # em-dash
  s/--/–/g;    # en-dash
  s/(?<!\\)\`\`/“/g;  # smart quotes (also single apostrophe), unless preceded by backslash
  s/(?<!\\)\'\'/”/g;
@@ -275,9 +282,6 @@ sub latex2utf8 {
  s/[ \t]+/ /g;
  s/^ //;
  s/ $//;
-
- # diacritics
- $_ = decode('latex', $_);	# use TeX::Encode;
 
  do {
      $in = $_;		# process innermost tags until none left
@@ -293,7 +297,10 @@ sub latex2utf8 {
      
      # small caps - just print normally
      s/\\textsc\{([^\{\}]+)}/$1/g;
- } until ($in eq $_)
+ } until ($in eq $_);
+
+ # diacritics	removes curly braces, so do this after processing commands
+ $_ = decode('latex', $_);	# use TeX::Encode;
 
  # Any remaining backslashed sequences get deleted with a WARNING
  warn "Don't know how to translate $& to UTF; deleting it" while s/\\[A-Za-z]+//;
