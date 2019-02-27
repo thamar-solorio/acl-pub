@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -CSio
 # Last Updated 15.May.2018 by slukin
 #
 # Usage: anthologize.pl cdrom anthology volume_id volume_no
@@ -27,6 +27,7 @@
 
 use strict 'vars';
 
+use utf8;
 use File::Spec;
 use Text::BibTeX;
 use TeX::Encode;	# for latex accents to utf8
@@ -69,10 +70,9 @@ for my $dir (glob("$cdrom/*")) {
     $pdf =~ s{/bib/([^/]*)\.bib$}{/pdf/$1.pdf};
 
     # Parse the bib entry.
-    open(BIB,$bib) || die;
-    my $bibentry = new Text::BibTeX::Entry;
-    $bibentry->parse($bib, \*BIB) && $bibentry->parse_ok || die "Trouble parsing a BibTeX entry from $bib";
-
+    my $file = Text::BibTeX::File->new($bib);
+    my $bibentry = Text::BibTeX::Entry->new({ binmode => 'utf-8', normalization => 'NFD' }, $file);
+    
     # Extract URL from bib file; translate it to anthology base filename
     warn "Warning: No URL given in $bib (skipping)\n", next unless $bibentry->exists('url');
     my $url = $bibentry->get('url');
@@ -206,8 +206,7 @@ for my $dir (glob("$cdrom/*")) {
     # in it, but the underlying bt_parse_entry library insists on reading
     # all of this file (so it can clean up) before it goes on to the next file).
 
-    die "Aborting: $bib had more than one entry" if $bibentry->parse($bib, \*BIB);
-    close(BIB);
+    die "Aborting: $bib had more than one entry" if Text::BibTeX::Entry->new({ binmode => 'utf-8', normalization => 'NFD' }, $file);
 
   }
 
