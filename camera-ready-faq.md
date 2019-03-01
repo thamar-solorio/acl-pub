@@ -199,6 +199,6 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 
 #  My question isn't answered here...?
 
-   Please email the publications chairs at
-   [NAACL 2018 Publications Co-Chairs](mailto:naacl2018-publications@googlegroups.com).
+   Please email the current publications chairs at
+   [NAACL 2019 Publications Co-Chairs](mailto:naacl-2019-publications@googlegroups.com).
    We will update this page if new issues arise.
