@@ -175,7 +175,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 
    When you submit the paper, you will be asked to sign electronically
    (via the START Conference Manager) or physically the
-   [ACL Copyright Transfer Agreement](copyright/naacl2013-copyright.pdf)
+   [ACL Copyright Transfer Agreement](assets/copyright/naacl2013-copyright.pdf)
    on behalf of all authors. Authors retain many rights under this
    agreement and it is appropriate in the vast majority of cases.
    Please
