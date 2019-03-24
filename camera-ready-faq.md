@@ -1,11 +1,13 @@
 ---
 layout: default
-title: NAACL 2018 instructions for camera-ready paper submissions
+title: General *ACL instructions for camera-ready paper submissions
 ---
 
+Below are the general *ACL policies for preparing camera-ready papers. Please be advised that your conference may have some differences from what is listed in this document. If you are unsure, email your conference publication chairs. 
+
+-  [What common mistakes do people make? What should I pay special attention to?](#what-common-mistakes-do-people-make-what-should-i-pay-special-attention-to)
 -  [When and where do I send my final camera-ready paper?](#when-and-where-do-i-send-my-final-camera-ready-paper)
 -  [I'm having a font/unicode issue.](#im-having-a-fontunicode-issue)
--  [What common mistakes do people make? What should I pay special attention to?](#what-common-mistakes-do-people-make-what-should-i-pay-special-attention-to)
 -  [How should the final copy differ from the original submission?](#how-should-the-final-copy-differ-from-the-original-submission)
 -  [How long can it be?](#how-long-can-it-be)
 -  [What's the deal with including an Appendix? Do I include it as supplemental?](#whats-the-deal-with-including-an-appendix-do-i-include-it-as-supplemental)
@@ -36,7 +38,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 
    You may submit the final
    version of your paper by
-   [navigating to the NAACL 2018 START login](https://www.softconf.com/naacl2018/papers)
+   navigating to your conference START login, e.g., [https://www.softconf.com/naacl2019/papers](https://www.softconf.com/naacl2019/papers)
    and following the internal links. You should have received an email
    with more information about this procedure.
 
@@ -52,19 +54,40 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    - Ensure that all tables, graphs, and figures are readable when
      viewed in black and white (to help the color-blind and those
      reading print-outs).
+   - Verify that you are following your conference style guidelines (e.g., font sizes, placement of captions)
 
 #  How long can it be?
 
-   For both long and short papers, we allow one extra page to help
+   For both long and short papers, most *ACL conferences allow one extra page to help
    address reviewer comments.  So long papers are permitted at most 9
    pages of text plus additional pages containing References, and Appendix.
    Short papers get 5 pages of text. Acknowledgements are included in the 9 
    (long)/5 (short) pages of content.
    
+   If you are unsure about the page limit for the conference, please contact your conference publication chairs.
+   
 # What's the deal with including an Appendix? Do I include it as supplemental?
 
    You can include an Appendix, but the paper writing must be self-contained before 
    the Acknowledgements. The Appendix should appear in main document, after the references. 
+   The Appendix does not count towards the paper page limit. There is no explicit page limit on the size of the Appendix,
+   but please be mindful of what you choose to include. The *ACL style template gives guidance on what is appropriate for 
+   the Appendix (which is added after the references) vs. Supplementary Material (which are uploaded separately from the paper).
+
+   From the NAACL 2019 style template: 
+   "Appendices are material that can be read, and include lemmas, formulas, proofs and tables that are not critical 
+   to the reading and understanding of the paper. Appendices should be uploaded as supplementary material when 
+   submitting the paper for review. Upon acceptance, the appendices come after the references."
+
+   "Submissions may include non-readable supplementary material used in the work and described in the paper. 
+   Any accompanying software and/or data should include licenses and documentation of research review as appropriate. 
+   Supplementary material may report preprocessing decisions, model parameters, and other details necessary for the 
+   replication of the experiments reported in the paper. Seemingly small preprocessing decisions can sometimes 
+   make a large difference in performance, so it is crucial to record such decisions to precisely characterize 
+   state-of-the-art methods. Nonetheless, supplementary material should be supplementary (rather than central) 
+   to the paper. Supplementary material may include explanations or details of proofs or derivations that do 
+   not fit into the paper, lists of features or feature templates, sample inputs and outputs for a system, 
+   pseudo-code or source code, and data. (Source code and data should be separate uploads, rather than part of the paper)."
 
 #  What is the format for the camera-ready copy?
 
@@ -72,8 +95,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    paper (210 × 297 millimeters).  We strongly recommend the use of ACL
    LaTeX style files (or Microsoft Word Style files) tailored for this
    year's conference. You can view the style files and detailed
-   formatting instructions on the web
-   [from the main pubs page](http://naacl.org/naacl-pubs/).
+   formatting instructions on your conference website.
 
    If you are using LaTeX, please create the PDF file with
    <code>pdflatex</code> or <code>xelatex</code>.  This ensures use of
@@ -183,7 +205,7 @@ title: NAACL 2018 instructions for camera-ready paper submissions
 
    Before signing this form, please confirm with your co-authors (and,
    if applicable, your and their employers) that they authorize you to
-   sign on their behalf.
+   sign on their behalf. Please sign your full name (not just your first or last initials).
    
    NAACL 2019 has it's own, new [NAACL 2019 Copyright Transfer Agreement](assets/copyright/naacl2019-copyright.pdf).
 
@@ -197,9 +219,10 @@ title: NAACL 2018 instructions for camera-ready paper submissions
    so make sure that it is correct there (e.g., capitalization, full
    name, etc). You can change this on
    [user settings page](https://www.softconf.com/naacl2015/papers/user/scmd.cgi?scmd=updateProfile).
+   
+   Note: Your conference may not allow authors to be added or reordered after submission. Please check with your conference. 
+
 
 #  My question isn't answered here...?
 
-   Please email the current publications chairs at
-   [NAACL 2019 Publications Co-Chairs](mailto:naacl-2019-publications@googlegroups.com).
-   We will update this page if new issues arise.
+   Please email the current publications chairs for any questions or clarifications. We will update this page if new issues arise.
