@@ -26,7 +26,7 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
    Anthology](http://www.aclweb.org/anthology/) (and propagates to
    Google Scholar, etc).
 
-     ![Picture of Softconf user info fields](assets/images/userinfo.png)
+   ![Picture of Softconf user info fields](assets/images/userinfo.png)
      
    Before the metadata is entered, please have all authors ensure that
    the their name in their START profile (User Console &rarr; Update
