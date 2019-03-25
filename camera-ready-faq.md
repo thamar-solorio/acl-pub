@@ -3,7 +3,7 @@ layout: default
 title: General *ACL instructions for camera-ready paper submissions
 ---
 
-Below are the general *ACL policies for preparing camera-ready papers. Please be advised that your conference may have some differences from what is listed in this document. If you are unsure, email your conference publication chairs. 
+Below are the general *ACL policies for preparing camera-ready papers. Please be advised that your conference may have some differences from what is listed in this document. If you are unsure, email your conference publication chairs.
 
 -  [Entering metadata](#entering-metadata)
 -  [When and where do I send my final camera-ready paper?](#when-and-where-do-i-send-my-final-camera-ready-paper)
@@ -20,43 +20,65 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
 
 # Entering metadata
 
-   The metadata (title, author, abstract) that you enter into START is
-   very important, because it is used on the conference website,
-   handbook, mobile app, and the [ACL
-   Anthology](http://www.aclweb.org/anthology/) (and propagates to
-   Google Scholar, etc).
+The metadata (title, author, abstract) that you enter into START is
+very important, because it is used on the conference website,
+handbook, mobile app, and the [ACL
+Anthology](http://www.aclweb.org/anthology/) (and propagates to
+Google Scholar, etc).
 
-     ![Picture of Softconf user info fields](assets/images/userinfo.png)
-     
-   Before the metadata is entered, please have all authors ensure that
-   the their name in their START profile (User Console &rarr; Update
-   Profile) appears exactly the way that they want it to appear. All
-   Unicode (UTF-8) characters are allowed. Note that "Last Name" is
-   the name by which your paper is to be cited (usually a family
-   name).
-   
-   When entering the metadata, **please** use the lookup mechanism to
-   search for your co-authors' names by account ID. This links the
-   paper to their START account and, crucially, takes their preferred
-   name formatting for the metadata. If you enter the authors' names
-   manually, it will be more work for you, and you might introduce
-   errors.
+![Picture of Softconf user info fields](assets/images/userinfo.png)
 
-   The metadata should be written using Unicode (UTF-8) with LaTeX
-   control sequences. Please try to follow these guidelines:
+Before the metadata is entered, please have all authors ensure that
+the their name in their START profile (User Console &rarr; Update
+Profile) appears exactly the way that they want it to appear.
 
-   - If you need literal curly braces, please escape them like this:
-     `\{` `\}`
+* Unicode (UTF-8) can be used for accented or special characters.
 
-   - If your title has letters that should always be capitals, you can
-     protect them with curly braces, like this: `{P}enn {T}reebank`.
+* Ordinarily, names are **not** written in all caps or all lowercase.
 
-   - If you copy-and-paste from your PDF file, please be sure to
-     correct words broken by hyphenation.
+* The "Last Name" is the name(s) by which your paper is to be
+  cited. It is usually a family name, even for authors from
+  cultures where the family name is written first.
 
-   - If you copy-and-paste from your LaTeX source, please don't use
-     any nonstandard commands. There should be no `\footnote`s or
-     citations using `\cite`, etc.
+* The "First Name" is usually a given name or names, including
+     middle names/initials.
+
+When entering the metadata, **please** use the lookup mechanism to
+search for your co-authors' names by account ID. This links the
+paper to their START account and, crucially, takes their preferred
+name formatting for the metadata. If you enter the authors' names
+manually, it will be more work for you, and you might introduce
+errors.
+
+The metadata should be written using Unicode (UTF-8) with LaTeX
+commands. Please try to follow these guidelines:
+
+ - In titles, please capitalize the first word, the first word
+   after a colon (`:`), and all other words except the following
+   "little words": articles, prepositions, coordinating
+   conjunctions, and the infinitive marker "to." This includes
+   hyphenated words like `Mixed-Case`.
+
+ - If your title has letters that should always be capitals (when
+   a bibliography style lowercases it), please protect
+   them with curly braces, like this: `{E}nglish`, `{C}homsky`,
+   `{IBM}`, `{CFG}s`, `{HMM}s`. In titles with more than one
+   sentence, the first letter of a sentence should also be
+   protected.
+
+ - If you need literal curly braces, please escape them like this:
+   `\{` `\}`
+
+ - Please don't use any nonstandard LaTeX commands, and there should
+   be no `\footnote`s or citations using `\cite` or related commands.
+
+ - You can use LaTeX math mode where appropriate: `An $O(n^2)$
+   Algorithm for $n$-gram Smoothing`.
+
+ - You can use Unicode (UTF-8) for accented or special characters.
+
+ - If you copy-and-paste from your PDF file, please be sure to
+   rejoin words broken by hyphenation.
 
 #  When and where do I send my final camera-ready paper?
 
@@ -85,32 +107,32 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
    For both long and short papers, most *ACL conferences allow one extra page to help
    address reviewer comments.  So long papers are permitted at most 9
    pages of text plus additional pages containing References, and Appendix.
-   Short papers get 5 pages of text. Acknowledgements are included in the 9 
+   Short papers get 5 pages of text. Acknowledgements are included in the 9
    (long)/5 (short) pages of content.
-   
+
    If you are unsure about the page limit for the conference, please contact your conference publication chairs.
-   
+
 # What's the deal with including an Appendix? Do I include it as supplemental?
 
-   You can include an Appendix, but the paper writing must be self-contained before 
-   the Acknowledgements. The Appendix should appear in main document, after the references. 
+   You can include an Appendix, but the paper writing must be self-contained before
+   the Acknowledgements. The Appendix should appear in main document, after the references.
    The Appendix does not count towards the paper page limit. There is no explicit page limit on the size of the Appendix,
-   but please be mindful of what you choose to include. The *ACL style template gives guidance on what is appropriate for 
+   but please be mindful of what you choose to include. The *ACL style template gives guidance on what is appropriate for
    the Appendix (which is added after the references) vs. Supplementary Material (which are uploaded separately from the paper).
 
-   From the NAACL 2019 style template: 
-   "Appendices are material that can be read, and include lemmas, formulas, proofs and tables that are not critical 
-   to the reading and understanding of the paper. Appendices should be uploaded as supplementary material when 
+   From the NAACL 2019 style template:
+   "Appendices are material that can be read, and include lemmas, formulas, proofs and tables that are not critical
+   to the reading and understanding of the paper. Appendices should be uploaded as supplementary material when
    submitting the paper for review. Upon acceptance, the appendices come after the references."
 
-   "Submissions may include non-readable supplementary material used in the work and described in the paper. 
-   Any accompanying software and/or data should include licenses and documentation of research review as appropriate. 
-   Supplementary material may report preprocessing decisions, model parameters, and other details necessary for the 
-   replication of the experiments reported in the paper. Seemingly small preprocessing decisions can sometimes 
-   make a large difference in performance, so it is crucial to record such decisions to precisely characterize 
-   state-of-the-art methods. Nonetheless, supplementary material should be supplementary (rather than central) 
-   to the paper. Supplementary material may include explanations or details of proofs or derivations that do 
-   not fit into the paper, lists of features or feature templates, sample inputs and outputs for a system, 
+   "Submissions may include non-readable supplementary material used in the work and described in the paper.
+   Any accompanying software and/or data should include licenses and documentation of research review as appropriate.
+   Supplementary material may report preprocessing decisions, model parameters, and other details necessary for the
+   replication of the experiments reported in the paper. Seemingly small preprocessing decisions can sometimes
+   make a large difference in performance, so it is crucial to record such decisions to precisely characterize
+   state-of-the-art methods. Nonetheless, supplementary material should be supplementary (rather than central)
+   to the paper. Supplementary material may include explanations or details of proofs or derivations that do
+   not fit into the paper, lists of features or feature templates, sample inputs and outputs for a system,
    pseudo-code or source code, and data. (Source code and data should be separate uploads, rather than part of the paper)."
 
 #  What is the format for the camera-ready copy?
@@ -137,8 +159,8 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
    <a name="format-size"></a>
    -  **Checking the paper size**. Your paper needs to be formatted to
       A4. Here are a
-      couple of ways to check this: 
-      <ul> 
+      couple of ways to check this:
+      <ul>
       <li>    
       Using pdfinfo. The `pdfinfo` command should include
 
@@ -148,8 +170,8 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
       </li>
       <li>
       Using Apple's Preview.app. Open the PDF, and type &#8984-I. It should report the
-        correct page size. 
-        
+        correct page size.
+
       </li>
       <li>
       Using Adobe Acrobat. Open the PDF, navigate to File, Properties..., Description. The
@@ -188,8 +210,8 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
    embedded in the PDF file so that they can be displayed by
    non-Asian versions of the PDF reader.  (Asian versions ship with
    a larger set of default fonts.)
-     
-     
+
+
 #  What if my paper includes graphics?
 
    Remember that you are providing a camera-ready copy.  Thus, artwork
@@ -229,7 +251,7 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
    Before signing this form, please confirm with your co-authors (and,
    if applicable, your and their employers) that they authorize you to
    sign on their behalf. Please sign your full name (not just your first or last initials).
-   
+
    NAACL 2019 has its own new [NAACL 2019 Copyright Transfer Agreement](assets/copyright/naacl2019-copyright.pdf).
 
 #  What if my paper's title or author list has changed?
@@ -242,8 +264,8 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
    so make sure that it is correct there (e.g., capitalization, full
    name, etc). You can change this on
    [user settings page](https://www.softconf.com/naacl2015/papers/user/scmd.cgi?scmd=updateProfile).
-   
-   Note: Your conference may not allow authors to be added or reordered after submission. Please check with your conference. 
+
+   Note: Your conference may not allow authors to be added or reordered after submission. Please check with your conference.
 
 
 #  My question isn't answered here...?
