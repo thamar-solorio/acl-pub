@@ -5,7 +5,7 @@ title: General *ACL instructions for camera-ready paper submissions
 
 Below are the general *ACL policies for preparing camera-ready papers. Please be advised that your conference may have some differences from what is listed in this document. If you are unsure, email your conference publication chairs. 
 
--  [What common mistakes do people make? What should I pay special attention to?](#what-common-mistakes-do-people-make-what-should-i-pay-special-attention-to)
+-  [Entering metadata](#entering-metadata)
 -  [When and where do I send my final camera-ready paper?](#when-and-where-do-i-send-my-final-camera-ready-paper)
 -  [I'm having a font/unicode issue.](#im-having-a-fontunicode-issue)
 -  [How should the final copy differ from the original submission?](#how-should-the-final-copy-differ-from-the-original-submission)
@@ -18,21 +18,45 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
 -  [What if my paper's title or author list has changed?](#what-if-my-papers-title-or-author-list-has-changed)
 -  [My question isn't answered here...?](#my-question-isnt-answered-here)
 
-# What common mistakes do people make? What should I pay special attention to?
+# Entering metadata
 
-   - When entering the metadata for your paper, **please** use the
-     lookup mechanism to search for your co-authors' names by account
-     ID. This links the paper to their START account and, crucially,
-     takes their preferred name formatting for the metadata. If you
-     enter the authors' names manually, it will be more work for you,
-     and you might introduce error.
-
-     This metadata is very important, since it is what is used to link
-     the paper in repositories like the
-     [ACL anthology](http://www.aclweb.org/anthology/)** (and in
-     Google Scholar, etc).
+   The metadata (title, author, abstract) that you enter into START is
+   very important, because it is used on the conference website,
+   handbook, mobile app, and the [ACL
+   Anthology](http://www.aclweb.org/anthology/) (and propagates to
+   Google Scholar, etc).
 
      ![Picture of Softconf user info fields](assets/images/userinfo.png)
+     
+   Before the metadata is entered, please have all authors ensure that
+   the their name in their START profile (User Console &rarr; Update
+   Profile) appears exactly the way that they want it to appear. All
+   Unicode (UTF-8) characters are allowed. Note that "Last Name" is
+   the name by which your paper is to be cited (usually a family
+   name).
+   
+   When entering the metadata, **please** use the lookup mechanism to
+   search for your co-authors' names by account ID. This links the
+   paper to their START account and, crucially, takes their preferred
+   name formatting for the metadata. If you enter the authors' names
+   manually, it will be more work for you, and you might introduce
+   errors.
+
+   The metadata should be written using Unicode (UTF-8) with LaTeX
+   control sequences. Please try to follow these guidelines:
+
+   - If you need literal curly braces, please escape them like this:
+     `\{` `\}`
+
+   - If your title has letters that should always be capitals, you can
+     protect them with curly braces, like this: `{P}enn {T}reebank`.
+
+   - If you copy-and-paste from your PDF file, please be sure to
+     correct words broken by hyphenation.
+
+   - If you copy-and-paste from your LaTeX source, please don't use
+     any nonstandard commands. There should be no `\footnote`s or
+     citations using `\cite`, etc.
 
 #  When and where do I send my final camera-ready paper?
 
@@ -99,11 +123,10 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
 
    If you are using LaTeX, please create the PDF file with
    <code>pdflatex</code> or <code>xelatex</code>.  This ensures use of
-   the proper Type 1 fonts and also takes advantage of other PDF
+   the proper fonts and also takes advantage of other PDF
    features. You will have the best results using a modern LaTeX
    distribution, in particular,
-   [TeX live](http://www.tug.org/texlive/) (TeX Live 2014 is
-   available).
+   [TeX Live](http://www.tug.org/texlive/).
 
 #  How do I ensure that my file is correctly formatted?
 
@@ -207,7 +230,7 @@ Below are the general *ACL policies for preparing camera-ready papers. Please be
    if applicable, your and their employers) that they authorize you to
    sign on their behalf. Please sign your full name (not just your first or last initials).
    
-   NAACL 2019 has it's own, new [NAACL 2019 Copyright Transfer Agreement](assets/copyright/naacl2019-copyright.pdf).
+   NAACL 2019 has its own new [NAACL 2019 Copyright Transfer Agreement](assets/copyright/naacl2019-copyright.pdf).
 
 #  What if my paper's title or author list has changed?
 

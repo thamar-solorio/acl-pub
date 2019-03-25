@@ -75,12 +75,13 @@ There are several critcal times for pub-chairs. I will include the NAACL 2019 ti
   * [Camera Ready FAQ](camera-ready-faq.md) for them to send to the authors
 * Instruct book chairs to make a first attempt at an order file in START. This experience will be helpful later on.
 
-### Around Author Notifications Time & Prior to Camera Ready Deadline
+### Around Author Notification Time & Prior to Camera Ready Deadline
 
 * Optionally update the [Camera Ready FAQ](camera-ready-faq.md). 
 * Ask the PCs to point authors to the [Camera Ready FAQ](camera-ready-faq.md) guide (either in the email notification or on a blog)
-* Make sure Rich (SoftConf) initializes the camera-ready interface from the NAACL main one. This includes making sure that the `OptionalAttachment` field is present. 
-* Request access to all the softconf/START portals associated with the conference. We need access to all of them. 
+* Make sure Rich (Softconf) initializes the camera-ready interface from the NAACL main one.
+* Optionally update the camera-ready submission form.
+* Request access to all the Softconf/START portals associated with the conference. We need access to all of them. 
 
 ### After Author Notification
 
