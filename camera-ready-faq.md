@@ -265,7 +265,7 @@ commands. Please try to follow these guidelines:
    name, etc). You can change this on
    [user settings page](https://www.softconf.com/naacl2015/papers/user/scmd.cgi?scmd=updateProfile).
 
-   Note: Your conference may not allow authors to be added or reordered after submission. Please check with your conference.
+   Note: Your conference may or may not allow authors to be added or reordered after submission. Please check with your conference.
 
 
 #  My question isn't answered here...?
