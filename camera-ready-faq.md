@@ -59,12 +59,13 @@ commands. Please try to follow these guidelines:
    conjunctions, and the infinitive marker "to." This includes
    hyphenated words like `Mixed-Case`.
 
- - If your title has letters that should always be capitals (when
-   a bibliography style lowercases it), please protect
-   them with curly braces, like this: `{E}nglish`, `{C}homsky`,
-   `{IBM}`, `{CFG}s`, `{HMM}s`. In titles with more than one
-   sentence, the first letter of a sentence should also be
-   protected.
+ - If your title has letters that should always be capitals (when a
+   bibliography style lowercases it), please protect them with curly
+   braces, like this: `{E}nglish`, `{C}homsky`, `{IBM}`, `{CFG}s`,
+   `{HMM}s`. Please also protect the first letter after a
+   sentence-final punctuation mark. For example: `Why {C}hinese
+   {W}eb-as-{C}orpus is Wacky? {O}r: How Big Data is Killing {C}hinese
+   Corpus Linguistics`.
 
  - If you need literal curly braces, please escape them like this:
    `\{` `\}`
