@@ -63,9 +63,12 @@ commands. Please try to follow these guidelines:
    bibliography style lowercases it), please protect them with curly
    braces, like this: `{E}nglish`, `{C}homsky`, `{IBM}`, `{CFG}s`,
    `{HMM}s`. Please also protect the first letter after a
-   sentence-final punctuation mark. For example: `Why {C}hinese
-   {W}eb-as-{C}orpus is Wacky? {O}r: How Big Data is Killing {C}hinese
-   Corpus Linguistics`.
+   sentence-final punctuation mark. For example:
+
+   ```
+   Can {LSTM} Learn to Capture Agreement? {T}he Case of {B}asque
+   Named Entity Extraction from Noisy Input: Speech and {OCR}
+   ```
 
  - If you need literal curly braces, please escape them like this:
    `\{` `\}`
