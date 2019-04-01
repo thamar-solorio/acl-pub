@@ -59,16 +59,22 @@ commands. Please try to follow these guidelines:
    conjunctions, and the infinitive marker "to." This includes
    hyphenated words like `Mixed-Case`.
 
- - If your title has letters that should always be capitals (when a
-   bibliography style lowercases it), please protect them with curly
-   braces, like this: `{E}nglish`, `{C}homsky`, `{IBM}`, `{CFG}s`,
-   `{HMM}s`. Please also protect the first letter after a
-   sentence-final punctuation mark. For example:
+ - BibTeX (in many bibliography styles, including ACL's) lowercases
+   the titles of conference papers, and needs to be told which letters
+   _not_ to lowercase. So if your title has letters that should always
+   be capitals, please protect them with curly braces, like this:
+   `{E}nglish`, `{C}homsky`, `{IBM}`, `{CFG}s`, `{HMM}s`. Please also
+   protect the first letter after a sentence-final punctuation
+   mark. For example:
 
    ```
    Can {LSTM} Learn to Capture Agreement? {T}he Case of {B}asque
    Named Entity Extraction from Noisy Input: Speech and {OCR}
    ```
+
+   These curly braces will _not_ appear in the online conference
+   program or proceedings. They will only appear in the BibTeX file
+   that others will use to cite your paper.
 
  - If you need literal curly braces, please escape them like this:
    `\{` `\}`
