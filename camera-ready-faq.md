@@ -163,7 +163,6 @@ commands. Please try to follow these guidelines:
 #  How do I ensure that my file is correctly formatted?
 
    - [Make sure the paper is A4](#format-size)
-   - [Adjust the margin offsets when uploading](#format-margins)
    - [Embed custom fonts](#format-fonts)
 
    <a name="format-size"></a>
@@ -189,31 +188,6 @@ commands. Please try to follow these guidelines:
 
       </li>
       </ul>
-
-   <a name="format-margins"></a>
-   - **Adjusting margin offsets**. The text of your paper will almost
-     certainly be shifted slightly relative to other papers. When the
-     book is assembled, the boundary around the printed portion of
-     your paper may need to be shifted so that each paper is in the
-     same position on each page. Here is an example of a page printed
-     with the margin boundaries that demonstrates this shifting:
-
-   ![](assets/images/margin-shifted.png)
-
-   <font color="red">START provides you with the means to fix this
-     margin offset; please do!</font>. To do so, after you upload
-     your camera-ready paper, you will be presented with a small form
-     that presents you with guides and allows you to adjust these
-     offsets. Click on the "Test" button, then <b>click the link that
-     reads "Click here to download the draft of your paper in the
-     final ACL proceedings."</b>. You will be presented with a version
-     of the proceedings containing only your paper, annotated with
-     guidelines that help you shift the content of your paper.
-
-   ![](assets/images/margin-offsets.png)
-
-   Please determine the required adjustments and enter them here. You can click "(click here to
-   show/hide instructions)" for more information on how to do this.
 
    <a name="format-fonts"></a>
    **If your paper uses Asian fonts,** please ensure that they are
