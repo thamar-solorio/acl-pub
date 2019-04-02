@@ -190,10 +190,13 @@ commands. Please try to follow these guidelines:
       </ul>
 
    <a name="format-fonts"></a>
-   **If your paper uses Asian fonts,** please ensure that they are
+   - **If your paper uses Asian fonts,** please ensure that they are
    embedded in the PDF file so that they can be displayed by
    non-Asian versions of the PDF reader.  (Asian versions ship with
    a larger set of default fonts.)
+   
+   - **Legacy: Margin Checks**. Authors are no longer asked to manually check or correct their margins when uploading their camera-ready papers. 
+   
 
 
 #  What if my paper includes graphics?
