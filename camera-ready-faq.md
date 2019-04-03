@@ -190,10 +190,7 @@ commands. Please try to follow these guidelines:
       </ul>
 
    <a name="format-fonts"></a>
-   - **If your paper uses Asian fonts,** please ensure that they are
-   embedded in the PDF file so that they can be displayed by
-   non-Asian versions of the PDF reader.  (Asian versions ship with
-   a larger set of default fonts.)
+   - **Embedding Fonts**. You can check your final PDF with the command `pdffonts mypaper.pdf` and confirm that all the fonts say "yes" under "emb". START will not let you upload your final PDF otherwise. If you are including graphics with the PDF extension, these files must also have embedded fonts. If your paper uses Asian fonts, they must be embedded in the PDF file so that they can be displayed by non-Asian versions of the PDF reader (Asian versions ship with a larger set of default fonts.) 
    
    - **Legacy: Margin Checks**. Authors are no longer asked to manually check or correct their margins when uploading their camera-ready papers. 
    
